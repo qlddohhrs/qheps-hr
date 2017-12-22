@@ -169,4 +169,6 @@ The right-column asides consist of the following parts that should be separately
 	* Make sure each radio button field is Grouped together with unique names from each other and other similar groups on the form.
 	* In the Object>Binding tab, uncheck Specify Item Values. 
 
-#DoH #QHEPS #guide
+- - - -
+Prepared by: Jason Shanks
+Last updated: 2017-12-22 13:06
