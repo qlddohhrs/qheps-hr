@@ -33,7 +33,7 @@ This master folder includes the bulk of CSS, scripts and modular components used
 * style.inc – master custom stylesheet. Commented Headings before each section of this should bring clarity to where they apply in heirarchy from Macro down to the micro details.
 * style_archives.inc – this is a graveyard for styles no longer in use.
 
-> IMPORTANT: The main_footer-custom.inc and style.inc files are master files that control the appearance and related scripts for HR, HPSP and gradually all other sections of Corporate Services Division on QHEPS. Consequently, any changes to these immediately effect all of these areas. Some consultation may be needed for any major changes and after sufficient testing.  
+> IMPORTANT: The main_footer-custom.inc and style.inc files are master files that control the appearance and related scripts for HR, HPSP and gradually all other sections of Corporate Services Division on QHEPS. Consequently, any changes to these immediately effect all of these areas. Some consultation may be needed for any major changes and after sufficient testing.    
 
 
 ### Style.inc overview
@@ -91,17 +91,19 @@ This custom javascript get’s the current page URL and passes it to the Feedbac
 These scripts and global options support the carousel used on the HR homepage. If used elsewhere and different options are needed, the global ones can be overridden on that specific page.
 #### dataTable options
 These scripts were initially included to support the Training Calendar. They are duplicated 8 times to allow for up to 8 months listed at a time.
-> The duplication of these could probably be condensed into a loop to save space and improve page load time.  
+> The duplication of these could probably be condensed into a loop to save space and improve page load time.    
  
 
 ### Custom main_secnav.inc
-These secondary navigation menu files are normally created in TeamSite using the wizard generator after clicking Edit. To circumvent this and use a custom file (as we are currently doing), there is one initial step that needs to be done. All subsequent edits to this file by Importing (instead of Editing) will publish fine.
+These secondary navigation menu files are normally created in TeamSite using the wizard generator that clicking Edit brings up.. To circumvent this and use a custom file (as we are currently doing), follow these steps initially.. All subsequent edits to this file by Importing (instead of Editing) will publish fine without being over-written by the templatedata file.
 
-1. In TeamSite navigation to and rename the equivalent templatedata file (such as append _old):
+1. In TeamSite, navigate to and rename the equivalent templatedata file to anything else (suggest appending `_old`):
 ```
 \templatedata\navigation\qhepsSecondaryMenu\data\hr\include\mainsec_nav.inc
 ```
-2. Publish the manually created mainsec_nav.inc as per usual.
+2. Externally create your new `main_secnav.inc` file. You can refer to existing one’s in `/hr/include/main_secnav.inc`, or if making an empty file that simply links to another nav like HR’s, refer to `/paris/include/main_sevnav.inc` for an example.
+3. Import your manually created `mainsec_nav.inc` file and overwrite the existing one.
+4. Submit the `mainsec_nav.inc` to publish to live as per usual.
 
 ## Javascript dependencies
 
@@ -155,18 +157,16 @@ The right-column asides consist of the following parts that should be separately
 * master-search.inc – global search component
 * quick_links-XXXX.inc – this is the custom component that includes each section’s Supporting resources, Related links, Need more help contacts
 * aside-feedback.inc – the global feedback component
-
 - - - -
-
 ## LiveCycle Designer Tips
 * Window menu>Layout for adjusting spacing, positioning of field captions, etc.
 * To Save as a PDF that can be filled and re-saved in Adobe Reader:
-		- [ ] Save as normal
-		- [ ] re-open in Adobe Acrobat Pro
-		- [ ] Select Save as > Reader Extended PDF > Enable Additional Features
-		- [ ] Save again.
+	* Save as normal
+	* re-open in Adobe Acrobat Pro
+	* Select Save as > Reader Extended PDF > Enable Additional Features
+	* Save again.
 * To create Yes/No radio buttons that are connected but only one can be selected:
-		- [ ] Make sure each radio button field is Grouped together with unique names from each other and other similar groups on the form.
-		- [ ] In the Object>Binding tab, uncheck Specify Item Values. 
+	* Make sure each radio button field is Grouped together with unique names from each other and other similar groups on the form.
+	* In the Object>Binding tab, uncheck Specify Item Values. 
 
 #DoH #QHEPS #guide

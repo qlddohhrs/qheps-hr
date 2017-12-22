@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h1 id="qhepshrdevelopertechnicalhandover">QHEPS HR Developer Technical handover</h1>
+
+<p>The <a href="http://qheps-dev.dctuat.health.qld.gov.au/hr/online/web-design-guide.htm">Web design guide</a> has been developed for Publishers to give a full overview of the styles and HTML snippets that have been created to apply our uniform style to their content.</p>
+
+<p>Beyond this, the main style.inc stylesheet has further custom styles broken down into commented sections.</p>
+
+<h2 id="keyelementsoftheteamsitefilestructure">Key elements of the TeamSite file structure</h2>
+
+<h3 id="mostsubdirectoryfolders">/mostSubdirectoryFolders</h3>
+
+<ul>
+<li>_includes – contains files that assemble the Aside_Right-column of each section such as:
+
+<ul>
+<li>right_column.inc – the shell file that assembles all parts of the Aside</li>
+<li>quick_links.inc – the only component that is custom for each section</li>
+</ul></li>
+</ul>
+
+<p>[See the Web design guide for full details on how these are put together.]</p>
+
+<h3 id="include">/include</h3>
+
+<p>This master folder includes the bulk of CSS, scripts and modular components used throughout the site. Milestone versions of it are checked-in to: https://github.com/qlddohhrs/qheps-hr-includes</p>
+
+<ul>
+<li>/bx-slider – support folder for the carousel used on the home page</li>
+<li>XXXX-sidenav.inc – these various files are the section navigation menus visible in the left-column of each page. They have a standard UL format. The included IDs and classes: <code>nav2, sidebar, nav2xc</code> are necessary for the style as designed.</li>
+<li>aside-feedback.inc – universal feedback section included at the bottom of every right_column. It automatically grabs the current page that it&#8217;s submitted from using javascript and includes in the feedback email.</li>
+<li>home-right_column.inc – this is the right-column used on the HR home and About HR Branch pages.</li>
+<li>home-slider.inc – this is the include containing all images/text that comprises the carousel used at the top of the HR home page.</li>
+<li>links-template.inc, right_column-template.inc – these files are referenced in the Web design guide as template files to use when building up a new Aside.</li>
+<li>main_footer-custom.inc – Custom Footer scripts added and referenced from here.</li>
+<li>main_footer.inc – this is the base footer content specified by Online services for use on all HR pages.</li>
+<li>main_secnav.inc – This file controls the Main Secondary navigation menu found underneath the Branch hame (begins with HR home&#8230;). [See dedicated section Custom main_secnav.inc for more details]</li>
+<li>master-quick_links.inc, master-right_column.inc – seldom used but wherever a section doesn&#8217;t have it&#8217;s own Aside these files are referenced.</li>
+<li>master-search.inc – universal HR search section included at the top of every right_column.</li>
+<li>master_sidenav.inc, right_column.inc, search.inc – not used any more.</li>
+<li>recruitment-sidenav2.inc – currently in development and to replace recruitment-sidenav.inc once the revised pages go live.</li>
+<li>style-live.inc – as improvements are made to the main stylesheet and reach publishing milestones, a copy is saved here as a backup to fallback to if need be.</li>
+<li>style.inc – master custom stylesheet. Commented Headings before each section of this should bring clarity to where they apply in heirarchy from Macro down to the micro details.</li>
+<li>style_archives.inc – this is a graveyard for styles no longer in use.</li>
+</ul>
+
+<blockquote>
+<p>IMPORTANT: The main_footer-custom.inc and style.inc files are master files that control the appearance and related scripts for HR, HPSP and gradually all other sections of Corporate Services Division on QHEPS. Consequently, any changes to these immediately effect all of these areas. Some consultation may be needed for any major changes and after sufficient testing.</p>
+</blockquote>
+
+<h3 id="style.incoverview">Style.inc overview</h3>
+
+<ul>
+<li>resets: for now, mostly for box-sizing that applies to the responsive grids</li>
+<li>Main content blocks:
+
+<ul>
+<li>Body, Navigation-Top</li>
+<li>Navigation-Section/sidenav (left-column)
+
+<ul>
+<li>Sliding menu (in testing, slide-out menu for Section nav in mobile view)</li>
+</ul></li>
+<li>Aside (right-column)</li>
+<li>Quick links (used in Aside and homepage section nav)</li>
+<li>Footer</li>
+</ul></li>
+<li>Basic HTML Elements</li>
+<li>Image options
+
+<ul>
+<li>full width</li>
+<li>magnify</li>
+</ul></li>
+<li>Page Banners</li>
+<li>Custom components:
+
+<ul>
+<li>Floats</li>
+<li>CSS tables</li>
+<li>Contact lists</li>
+<li>Data tables</li>
+<li>Calendar (Training, etc.)</li>
+<li>Boxes (Alerts, Feature)</li>
+<li>Vertical Accordions (JQueryUI)</li>
+<li>Vertical flowcharts (fix with iconfont)</li>
+<li>Policy Metadata</li>
+<li>Responsive grids</li>
+<li>Forms
+
+<ul>
+<li>Checkboxes &amp; Radio buttons #addtoWDG</li>
+</ul></li>
+<li>Buttons (similar to Bootstrap)</li>
+<li>Embedded Videos (Youtube/Vimeo)</li>
+<li>Slideshows (bx-slider)</li>
+<li>Footnotes</li>
+<li>Countdown timer (not in use, was for annual W4Q campaign)</li>
+<li>Font Awesome customisations</li>
+<li>Colours (fore/background classes offered in Web design guide)</li>
+<li>Miscellaneous styles
+
+<ul>
+<li>hide (display:none;)
+
+<ul>
+<li>figcaption</li>
+</ul></li>
+</ul></li>
+<li>Just for fun</li>
+<li>Responsive Media Queries
+
+<ul>
+<li>includes some early experimentation with using the .hideme class already in the main QHEPS template to hide the Section nav and trigger with a slide-out from button idea.</li>
+</ul></li>
+<li>A group of unused styles never seen used anywhere in 2017 (might relocated to style_archive in case needed in future)</li>
+</ul></li>
+</ul>
+
+<h3 id="customfooteroverview">Custom Footer overview</h3>
+
+<h4 id="fontawesomeicons">Font Awesome icons</h4>
+
+<p>Currently the Font Awesome framework is being referenced through their CDN link with the recent addition of their FA5 update scripts that include Shims for backwards compatibility with FA4.
+Ideally post-Squiz migration, this library would be incorporated locally and using the Font Awesome 5 Pro complete version that we are now paying for. Latest version can be downloaded by signing in at <a href="https://fontawesome.com">FontAwesome.com</a>.
+In the interim, a CDN link for Font Awesome 5 Pro is apparently in the works and would be a one line swap in the custom-footer.</p>
+
+<h4 id="jqueryui">JQuery UI</h4>
+
+<p>The standard JQuery UI styles and script support features such as the Accordions.</p>
+
+<h4 id="urlofcurrentpage">URL of current page</h4>
+
+<p>This custom javascript get’s the current page URL and passes it to the Feedback form embedded in the Aside of each page of HR.</p>
+
+<h4 id="bx-slider">BX-Slider</h4>
+
+<p>These scripts and global options support the carousel used on the HR homepage. If used elsewhere and different options are needed, the global ones can be overridden on that specific page.</p>
+
+<h4 id="datatableoptions">dataTable options</h4>
+
+<p>These scripts were initially included to support the Training Calendar. They are duplicated 8 times to allow for up to 8 months listed at a time.</p>
+
+<blockquote>
+<p>The duplication of these could probably be condensed into a loop to save space and improve page load time.</p>
+</blockquote>
+
+<h3 id="custommain_secnav.inc">Custom main_secnav.inc</h3>
+
+<p>These secondary navigation menu files are normally created in TeamSite using the wizard generator that clicking Edit brings up.. To circumvent this and use a custom file (as we are currently doing), follow these steps initially.. All subsequent edits to this file by Importing (instead of Editing) will publish fine without being over-written by the templatedata file.</p>
+
+<ol>
+<li>In TeamSite, navigate to and rename the equivalent templatedata file to anything else (suggest appending <code>_old</code>):</li>
+</ol>
+
+<pre><code>\templatedata\navigation\qhepsSecondaryMenu\data\hr\include\mainsec_nav.inc
+</code></pre>
+
+<ol>
+<li>Externally create your new <code>main_secnav.inc</code> file. You can refer to existing one’s in <code>/hr/include/main_secnav.inc</code>, or if making an empty file that simply links to another nav like HR’s, refer to <code>/paris/include/main_sevnav.inc</code> for an example.</li>
+<li>Import your manually created <code>mainsec_nav.inc</code> file and overwrite the existing one.</li>
+<li>Submit the <code>mainsec_nav.inc</code> to publish to live as per usual.</li>
+</ol>
+
+<h2 id="javascriptdependencies">Javascript dependencies</h2>
+
+<ul>
+<li>Newer versions of JQuery break the current versions of bx-slider and Training Calendar datatables. <script src="https://code.jquery.com/jquery-1.12.4.js"></script> and later.</li>
+</ul>
+
+<h2 id="publishingprocess">Publishing process</h2>
+
+<p>TeamSite itself has some simplified versioning with the features of:</p>
+
+<ul>
+<li>saving previous version states</li>
+<li>document steps for saving version control</li>
+<li></li>
+</ul>
+
+<h2 id="post-squiz">Post-Squiz</h2>
+
+<h2 id="stylestoupdate">Styles to update</h2>
+
+<ul>
+<li><code>#nav2 {margin: 0 15px;}</code> CHANGE TO <code>{margin: 15px;}</code></li>
+<li>At the top of <code>#contentblock30</code> in the QHEPS template, an extra <p> is inserted. Not sure if this can be removed from the new Squiz asset for this but it would be ideal for consistent alignment of all 3 sections.</li>
+</ul>
+
+<h2 id="issues">Issues</h2>
+
+<ul>
+<li>Carousel pagers</li>
+<li>Nav2 not collapsing, Accordion expand/collapse caret also not displaying – I believe these 2 issues are related, potentially the top few lines of the custom footer code that was being cut-off.
+
+<ul>
+<li>UPDATE: confirmed this external stylesheet was not loaded: <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"></li>
+</ul></li>
+<li>Font Awesome icons not displaying – confident this was rectified by removing an offending comment line in ‘main_footer-custom.inc’</li>
+<li>Secondary nav display issue (partial green background) – confident this was rectified with instantiation of a custom ‘main_sec.inc’ file that removed all the previous styles from top.</li>
+</ul>
+
+<h2 id="filestorenameorre-organise">Files to rename or re-organise</h2>
+
+<p>Squiz has the advantage of both:</p>
+
+<ul>
+<li>respecting and allowing proper file name extensions</li>
+<li>treating any file as an asset number. Renaming an asset should have little consequence (i.e. not breaking anywhere else they are referenced).</li>
+</ul>
+
+<p>A lot of the clean-up we have wanted to do during the course of using TeamSite but was somewhat prohibitive by it not being supporting or too much extra effort involved. This includes:</p>
+
+<ul>
+<li>all .inc files that should actually be .css or .js for example.</li>
+<li>page names for consistency across the site</li>
+<li>moving folders and documents around for consistency (i.e. docs, images folders out of global folder, etc.) Squiz is not particular about the visual organisational structure as everything is just an Asset number.</li>
+</ul>
+
+<h2 id="filestore-separate">Files to re-separate</h2>
+
+<p>The following files especially would be best to separate back in to individual components after the migration to Squiz Matrix. Reason being that the migration scripts apparently will combine into one file, any files that are a combination of include files that only TeamSite understands.</p>
+
+<h3 id="mainfooter">Main Footer</h3>
+
+<p>The main footer will end up combining:</p>
+
+<ul>
+<li>the base footer content</li>
+<li>the Custom-Footer file – this file should be separated as it was prior to migration which would include:
+
+<ul>
+<li>main_footer-custom.inc – this file (asset) needs to be re-linked from any other area that is using HR styles as this is the Global version which in turn references the master stylesheet below as well).</li>
+<li>any included TeamSite virtual links that will need converting to Squiz-friendly normal style and script links.</li>
+<li>link to the style.inc (style.css) asset.</li>
+</ul></li>
+<li>the custom Stylesheet (style.inc) which should be separated and renamed correctly as style.css</li>
+</ul>
+
+<h3 id="asides">Asides</h3>
+
+<p>The right-column asides consist of the following parts that should be separately, especially before any changes are made to the global parts. There should still only be one for each section they are created for which totals around 30.</p>
+
+<ul>
+<li>right_column-XXXX.inc – the framework file that includes branding (logos top and bottom) and the references all the included assets below.</li>
+<li>master-search.inc – global search component</li>
+<li>quick_links-XXXX.inc – this is the custom component that includes each section’s Supporting resources, Related links, Need more help contacts</li>
+<li>aside-feedback.inc – the global feedback component</li>
+</ul>
+
+<hr />
+
+<h2 id="livecycledesignertips">LiveCycle Designer Tips</h2>
+
+<ul>
+<li>Window menu&gt;Layout for adjusting spacing, positioning of field captions, etc.</li>
+<li>To Save as a PDF that can be filled and re-saved in Adobe Reader:
+
+<ul>
+<li>Save as normal</li>
+<li>re-open in Adobe Acrobat Pro</li>
+<li>Select Save as &gt; Reader Extended PDF &gt; Enable Additional Features</li>
+<li>Save again.</li>
+</ul></li>
+<li>To create Yes/No radio buttons that are connected but only one can be selected:
+
+<ul>
+<li>Make sure each radio button field is Grouped together with unique names from each other and other similar groups on the form.</li>
+<li>In the Object&gt;Binding tab, uncheck Specify Item Values.</li>
+</ul></li>
+</ul>
+
+<p>#DoH #QHEPS #guide</p>
+
+</body>
+</html>
+
