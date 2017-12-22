@@ -1,0 +1,2 @@
+<iframe src="https://player.vimeo.com/video/192882662" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p class="figcaption">MentorMe &ndash; the mentors (4mins, 18secs) | <a href="/hr/mentoring/docs/video-transcript-mentorme-mentors.pdf">Video transcript</a> (PDF, 223kB)</p>

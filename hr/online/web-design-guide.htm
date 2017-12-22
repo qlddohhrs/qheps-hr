@@ -1,0 +1,1288 @@
+<!--
+<link rel="stylesheet" href="../includes/style.inc" mce_href="../includes/style.inc">
+-->
+<style>
+<!-- img {
+    border: 1px solid;
+}
+
+-->
+</style>
+<h1>HR Web design guide</h1>
+<h2>Introduction</h2>
+<p>For the purposes of creating a consistent look and feel to the QHEPS HR website and beyond, the following collection of styles and associated code templates has been created. As long as the required stylesheet and scripts are referenced within your website's content framework (header, footer, etc.), all of the elements below will be available. Utilising them for the prescribed purposes helps create a unified and logical experience for our site visitors by being able to:</p>
+<ul>
+    <li>visually distinguish what type of content can be expected where</li>
+    <li>provide various ways to drawn attention to the content that matters most.</li>
+</ul>
+<p>As with anything, overuse can have diminishing returns.</p>
+<p>Some of these elements work best on their own, however most have been designed in a modular fashion allowing combinations of them where appropriate.</p>
+<ul>
+    <li>For <strong><abbr title="Subject Matter Experts">SMEs</abbr> and content creators</strong>, being aware of the possibilities below should at least give you a starting point on how your content can be organised and presented.</li>
+    <li>For <strong>Publishers</strong> a basic understanding of HTML &amp; CSS is expected. Adapting these individually to your content, or mix and matching these various building blocks should hopefully be straightforward.</li>
+</ul>
+<div class="alert-box info css-table">
+    <div class="col"><em class="fa fa-info-circle fa-4x pull-left"></em></div>
+    <div class="col">
+        <p class="alert-title info">Training materials</p>
+        <p>If you are following this guide for training. Please download the <a href="/hr/online/docs/training-resources.zip">training-resources</a> (ZIP, 1.9MB) package that includes some supplementary material.</p>
+    </div>
+</div>
+<div class="alert-box info css-table">
+    <div class="col"><em class="fa fa-info-circle fa-4x pull-left"></em></div>
+    <div class="col">
+        <p class="alert-title info">Brackets installer</p>
+        <p>Download the <a href="/hr/online/Brackets-1.11-manual-install.zip">Brackets 1.11 manual installer</a> (ZIP, 79MB) and follow the included instructions to use the free open-source Brackets editor for your code.</p>
+    </div>
+</div>
+<h2>Basic HTML styles</h2>
+<div id="accordion">
+    <h3>Heading levels</h3>
+    <div>
+        <h1>H1 : 28px #1375bc</h1>
+        <h2>H2 : 20px #1375bc/#ebf5fd</h2>
+        <p>Body text in base 12px. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi atque saepe, nesciunt vel voluptas? Qui unde consequatur voluptas. Illum molestias tempora cum doloribus voluptatum ipsam enim. Aliquam nam eius hic.</p>
+        <h3>H3 : 18px #75c045</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, provident enim, reiciendis asperiores excepturi repudiandae aut animi doloribus praesentium, aliquid illum dolor doloremque numquam. Quo dignissimos fugit, nobis aspernatur ut.</p>
+        <h4>H4 : 16px #08416a</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi atque saepe, nesciunt vel voluptas? Qui unde consequatur voluptas. Illum molestias tempora cum doloribus voluptatum ipsam enim. Aliquam nam eius hic.</p>
+        <h5>H5 : 14px #75c045</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi atque saepe, nesciunt vel voluptas? Qui unde consequatur voluptas. Illum molestias tempora cum doloribus voluptatum ipsam enim. Aliquam nam eius hic.</p>
+        <h6>H6 : 12px #08416a</h6>
+    </div>
+    <h3>Header rule : 1px #b3bfb3</h3>
+    <div>
+        <hr />
+    </div>
+    <h3>Images</h3>
+    <div>
+        <h4>Full-width</h4>
+        <p>If you have an image that you want to ensure is stretched to the full width of it's container whether that be the entire body area of your page or inside any other box or container, just add the class <code>full-width</code>.</p>
+        <img src="/hr/online/images/demo-sunset-over-sea.jpg" alt="Sunset over the sea panoramic photo" class="full-width" />
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;PathToImage&quot;</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">&quot;AltDescriptionHere&quot;</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;full-width&quot;</span><span style="color: #f92672">/&gt;</span>
+</pre></div>
+        <h4>Magnify</h4>
+        <p>If you have an image that needs to be viewed large to see all the detail (charts, diagrams, etc.) but would prefer it didn't take up a lot of room on your page, you can use the <code>magnify</code> class to have it enlarge to twice the size when the cursor hovers over it. Just set the height and width at half the size of the original image size.</p>
+        <img height="332" width="300" src="/hr/online/images/demo-tree.jpg" alt="Tree of health image" class="magnify" />
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;img</span> <span style="color: #a6e22e">height=</span><span style="color: #e6db74">&quot;200&quot;</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">&quot;200&quot;</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;PathToImage&quot;</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">&quot;AltDescriptionHere&quot;</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;magnify&quot;</span><span style="color: #f92672">/&gt;</span>
+</pre></div>
+    </div>
+</div>
+<h2>Font Awesome icons</h2>
+<p>Icon fonts provide a quick and easy way to incorporate scalable vector images and adap them to your content's style. We have chosen the license-free <a href="http://fontawesome.io/">Font Awesome font and CSS toolkit</a> which is very commonly used and included by default in popular frameworks such as Bootstrap.</p>
+<link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet" />
+<div id="accordion">
+    <h3>Anatomy of a Font Awesome icon tag</h3>
+    <div><img src="/hr/online/images/font-awesome-tag-example.png" alt="font awesome example code" class="full-width" />
+        <p>The structure of a typical icon tag is comprised of:</p>
+        <ul>
+            <li>Opening and closing <code><em></em></code>tags.</li>
+            <li>Class of <code>far</code> which is mandatory to indicate a Font Awesome icon. Options include:
+                <ul>
+                    <li><code>fas</code> = solid weight</li>
+                    <li><code>far</code> = regular weight</li>
+                    <li><code>fal</code> = light weight <span class="blink-text">[Coming soon]</span></li>
+                    <li><code>fab</code> = specified when it's a brand icon (The search index below will tell you).</li>
+                </ul>
+            </li>
+            <li><code>fa-li</code> is only used if you are placing within a list.</li>
+            <li><code>fa-globe</code> is the all important name class that represents your icon choice.</li>
+            <li><code>fa-lg</code> represents the size. Options include:
+                <ul>
+                    <li><code>fa-xs</code> = x-small</li>
+                    <li><code>fa-sm</code> = small</li>
+                    <li><code>fa-lg</code> = large (This is usually the smallest we use).</li>
+                    <li><code>fa-2x</code> to <code>fa-10x</code> = 2em to 10em size.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <h3>Icon index</h3>
+    <div>
+        <p>If you are replacing an existing icon, the only change is the class that includes the icon name, eg. <code>fa-dollar</code>, <code>fa-calendar</code>.</p>
+        <p>Here is a list of most commonly used ones.</p>
+        <div class="quick_links">
+            <ul class="fa-ul">
+                <li><em class="fa-li fa fa-circle fa-sm"></em>Bullet Point (fa-circle) &ndash; only icon with a size of <code>fa-sm</code></li>
+                <li><em class="fa-li fa fa-link fa-lg"></em>Chain link (fa-link) &ndash; internal links</li>
+                <li><em class="fa-li fa fa-globe fa-lg"></em>Globe (fa-globe) &ndash; external links</li>
+                <li><em class="fa-li fa fa-file-text fa-lg"></em>Text Doc (fa-file-text) &ndash; Word documents</li>
+                <li><em class="fa-li fa fa-file-pdf-o fa-lg"></em>PDF Doc (fa-file-pdf-o) &ndash; PDF documents</li>
+                <li><em class="fa-li fa fa-address-book fa-lg"></em>Contact (fa-address-book)</li>
+                <li><em class="fa-li fa fa-envelope fa-lg"></em>Email (fa-envelope)</li>
+                <li><em class="fa-li fa fa-calendar-check-o fa-lg"></em>Calendar Event Item fa-calendar-check-o)</li>
+                <li><em class="fa-li fa fa-calendar fa-lg"></em>Calendar (fa-calendar)</li>
+                <li><em class="fa-li fa fa-map-marker fa-lg"></em>Location/Map Marker (fa-map-marker)</li>
+                <li><em class="fa-li fa fa-dollar fa-lg"></em>Dollar Sign (fa-dollar)</li>
+                <li><em class="fa-li fa fa-warning fa-lg"></em>Warning_Safety (fa-warning)</li>
+                <li><em class="fa-li fa fa-user fa-lg"></em>User (fa-user)</li>
+                <li><em class="fa-li fa fa-phone fa-lg"></em>Phone (fa-phone)</li>
+                <li><em class="fa-li fa fa-question-circle fa-lg"></em>FAQ (fa-question-circle)</li>
+            </ul>
+        </div>
+        <p>For more options search the:
+            <br /><a href="https://fontawesome.com/icons" class="btn btn-lg"><em class="fa fa-flag fa-2x pull-left"></em><span>Font Awesome icons</span></a></p>
+    </div>
+    <h3>Usage examples</h3>
+    <div>
+        <h4>Aside resource lists</h4>
+        <p>A common place we use Font Awesome icons is within the <strong>Supporting resources</strong>, <strong>Related links</strong> and <strong>Need more help?</strong> sections of our Asides.</p>
+        <p>Note the class of <code>fa-ul</code> in the enclosing unordered list. This is required for correct layout and spacing.</p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"quick_links"</span><span style="color: #f92672">&gt;</span> <span style="color: #75715e">&lt;!-- (class for right_column only) --&gt;</span>
+    <span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-ul"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;li&gt;</span>
+            <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-circle fa-sm"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>BulletPoint<span style="color: #f92672">&lt;/li&gt;</span>
+        <span style="color: #f92672">&lt;li&gt;</span>
+            <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-envelope fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Email<span style="color: #f92672">&lt;/li&gt;</span>
+        <span style="color: #f92672">&lt;li&gt;</span>
+            <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-file-pdf-o fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Link to a PDF file<span style="color: #f92672">&lt;/a&gt;</span> (PDF, 100kB)<span style="color: #f92672">&lt;/li&gt;</span>
+        <span style="color: #f92672">&lt;li&gt;</span>
+            <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-file-word-o fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Link to a Word doc<span style="color: #f92672">&lt;/a&gt;</span> (DOCX, 1.2MB)<span style="color: #f92672">&lt;/li&gt;</span>
+    <span style="color: #f92672">&lt;/ul&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+        </div>
+        <h4>Contact lists</h4>
+        <p>Within the main content of a page, or inside an accordion &ndash; here is an example of a stylised contact list which is more favourable to a responsive layout than the all too common spreadsheet table view.</p>
+        <ul class="contact-info fa-ul">
+            <li><em class="fa-li fa fa-map-marker fa-lg"></em>Outback, Australia </li>
+            <li><em class="fa-li fa fa-user fa-lg"></em>Easter Bilby </li>
+            <li><em class="fa-li fa fa-envelope fa-lg"></em><a href="mailto:Easter.Bilby@health.qld.gov.au">Easter.Bilby@health.qld.gov.au</a> </li>
+            <li><em class="fa-li fa fa-phone fa-lg"></em>07 3132 XXXX
+                <br />0432 XXX XXX </li>
+            <li><em class="fa-li fa fa-link fa-lg"></em><a href="https://qheps.health.qld.gov.au">qheps.health.qld.gov.au</a> </li>
+            <li><em class="fa-li fa fa-globe fa-lg"></em><a href="http://www.qirc.qld.gov.au/">QIRC</a> </li>
+        </ul>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"contact-info fa-ul "</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;</span>
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-map-marker fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Location
+            <span style="color: #f92672">&lt;/li&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;</span>
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-user fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Name
+            <span style="color: #f92672">&lt;/li&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;</span>
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-envelope fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Email
+            <span style="color: #f92672">&lt;/li&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;</span>
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-phone fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>07 3132 XXXX
+                <span style="color: #f92672">&lt;br</span> <span style="color: #f92672">/&gt;</span>0432 XXX XXX
+            <span style="color: #f92672">&lt;/li&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;</span>
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-link fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Website_internal
+            <span style="color: #f92672">&lt;/li&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;</span>
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-globe fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Website_external
+            <span style="color: #f92672">&lt;/li&gt;</span>
+        <span style="color: #f92672">&lt;/ul&gt;</span>
+</pre>
+        </div>
+        <p>Other common usage examples can be found below under <a href="#buttons">Buttons</a> or <a href="#alerts">Alert boxes</a>. For more inspiration see the <a href="https://fontawesome.com/how-to-use/svg-with-js">Font Awesome How to use page</a>.</p>
+    </div>
+</div>
+<h2>Page sections</h2>
+<div id="accordion">
+    <h3>Section navigation menus (left-column)</h3>
+    <div>
+        <div class="float-left">
+            <div id="nav2"><a name="sidenav"></a>
+                <h3 class="sidebar">In this section</h3>
+                <!--beginnoindex-->
+                <ul id="nav2xc">
+                    <li><a href="#">Nav level 1</a>
+                        <ul id="HeadingTitle">
+                            <!--The title given here will display in TeamSite as a Heading to default to.-->
+                            <li><a href="#">Nav level 2</a>
+                                <div><a href="#">Nav level 3</a>
+                                    <br /><a href="#">Nav level 3</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--endnoindex-->
+                    <li></li>
+                    <!--blank spacer. needed as QHEPS shell table styles conflict with custom styles here -->
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p>Traditionally these navigation menus have been created in TeamSite using a wizard. The limitations to this include:</p>
+            <ul>
+                <li>No Heading along top</li>
+                <li>limited to one navigation level.</li>
+            </ul>
+            <p>Using this template and uploading manually increases the navigation levels to three.</p>
+            <p>The basic construct is put together like the code below, a series of list items for Level 1, a nested Unordered list for Level 2, a DIV with each Level 3 link separated by line breaks.</p>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">id=</span><span style="color: #e6db74">"nav2"</span><span style="color: #f92672">&gt;&lt;a</span> <span style="color: #a6e22e">name=</span><span style="color: #e6db74">"sidenav"</span><span style="color: #f92672">&gt;&lt;/a&gt;</span>
+                <span style="color: #f92672">&lt;h3</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar"</span><span style="color: #f92672">&gt;</span>In this section<span style="color: #f92672">&lt;/h3&gt;</span>
+                <span style="color: #75715e">&lt;!--beginnoindex--&gt;</span>
+                <span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">id=</span><span style="color: #e6db74">"nav2xc"</span><span style="color: #f92672">&gt;</span>
+                    <span style="color: #f92672">&lt;li&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Nav level 1<span style="color: #f92672">&lt;/a&gt;</span>
+                        <span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">id=</span><span style="color: #e6db74">"HeadingTitle"</span><span style="color: #f92672">&gt;</span> <span style="color: #75715e">&lt;!--The title given here will display in TeamSite as a Heading to default to.--&gt;</span>
+                            <span style="color: #f92672">&lt;li&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Nav level 2<span style="color: #f92672">&lt;/a&gt;</span>
+                                <span style="color: #f92672">&lt;div&gt;</span>
+                                    <span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Nav level 3<span style="color: #f92672">&lt;/a&gt;</span>
+                                    <span style="color: #f92672">&lt;br&gt;</span>
+                                    <span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Nav level 3<span style="color: #f92672">&lt;/a&gt;</span>
+                                <span style="color: #f92672">&lt;/div&gt;</span>
+                            <span style="color: #f92672">&lt;/li&gt;</span>
+                        <span style="color: #f92672">&lt;/ul&gt;</span>
+                    <span style="color: #f92672">&lt;/li&gt;</span>
+                    <span style="color: #75715e">&lt;!--endnoindex--&gt;</span>
+                    <span style="color: #f92672">&lt;li&gt;&lt;/li&gt;</span>
+                    <span style="color: #75715e">&lt;!--blank spacer. needed as QHEPS shell table styles conflict with custom styles here --&gt;</span>
+                <span style="color: #f92672">&lt;/ul&gt;</span>
+            <span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+        </div>
+    </div>
+    <h3>Asides (right-column)</h3>
+    <div>
+        <div class="float-right">
+            <div id="rightcolumn">
+                <div class="hr-logo"><img src="/hr/images/human-resources-logo.png" alt="Human Resources Department of Health" /></div>
+                <!--#include virtual="/hr/include/master-search.inc" -->
+                <!--#include virtual="/hr/include/links-template.inc" -->
+            </div>
+        </div>
+        <div>
+            <p>An aside in the right-column sidebar is put together primarily from one <code>right_column-sectionName.inc</code> file. If you have more than one <strong>aside</strong> you will likely have some repetitive components across all your pages. For best practice, these should be referenced as separate <strong>includes</strong> (in the event they need to be updated in future.)</p>
+            <p>Common ones would be:</p>
+            <ul>
+                <li>Logo/Branding</li>
+                <li>Branch-customised search widget</li>
+            </ul>
+            <p>While others are unique to your particular section:</p>
+            <ul>
+                <li>Supporting resources &ndash; any documents that are either linked throughout the page body or provided as additional material.</li>
+                <li>Related links &ndash; internal/external pages outside of the section nav.</li>
+                <li>Contact info &ndash; tailored help direction for the section's material.</li>
+            </ul>
+            <h3 style="clear:left;">Building an aside</h3>
+            <p>Start by:</p>
+            <ul>
+                <li>creating an <code>includes</code> folder at the top-level of your site section's folder.</li>
+                <li>Upload the 2 files detailed below: <code>right_column-sectionName.inc</code> and <code>quick_links-sectionName.inc</code>.</li>
+                <li>Any global ones for branding, search, etc. hopefully are already in place, otherwise they would need to be placed in the root <strong>/include</strong> folder of your branch site.</li>
+            </ul>
+            <h4 style="clear:left;">Branch search include</h4>
+            <p>To customise the search, the <code>form action</code> needs to be adjusted with a comma-separated list of the site sections that searches should be narrowed to.</p>
+            <p>For example: action="javascript: fbsearch('s-search','qheps.health.qld.gov.au<code>/hr</code>');"</p>
+            <h6>Code example:</h6>
+            <!-- HTML generated using hilite.me -->
+            <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+                <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar_section"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;h3</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar"</span><span style="color: #f92672">&gt;</span>Search BranchName<span style="color: #f92672">&lt;/h3&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"hr-form hr-search"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;script </span><span style="color: #a6e22e">type=</span><span style="color: #e6db74">"text/javascript"</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">"http://qheps.health.qld.gov.au/_includes/scripts/funnelback.js"</span><span style="color: #f92672">&gt;&lt;/script&gt;</span>
+        <span style="color: #f92672">&lt;form</span> <span style="color: #a6e22e">action=</span><span style="color: #e6db74">"javascript: fbsearch('s-search','qheps.health.qld.gov.au/');"</span> <span style="color: #a6e22e">name=</span><span style="color: #e6db74">"s-search"</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;input</span> <span style="color: #a6e22e">name=</span><span style="color: #e6db74">"query"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"query"</span> <span style="color: #a6e22e">size=</span><span style="color: #e6db74">"25"</span> <span style="color: #a6e22e">type=</span><span style="color: #e6db74">"text"</span> <span style="color: #a6e22e">placeholder=</span><span style="color: #e6db74">"Type search terms + enter"</span> <span style="color: #f92672">/&gt;</span>
+            <span style="color: #f92672">&lt;input</span> <span style="color: #a6e22e">id=</span><span style="color: #e6db74">"searchbut"</span> <span style="color: #a6e22e">type=</span><span style="color: #e6db74">"submit"</span> <span style="color: #a6e22e">value=</span><span style="color: #e6db74">""</span> <span style="color: #f92672">/&gt;</span>
+        <span style="color: #f92672">&lt;/form&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+            </div>
+            <h4 style="clear:left;">Right Column</h4>
+            <p>The only customisations needed here is verifying the links to your global includes are correct, and updating the URL to your <code>quick_links-sectionName.inc</code> file.</p>
+            <h6>Code example:</h6>
+            <!-- HTML generated using hilite.me -->
+            <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+                <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">id=</span><span style="color: #e6db74">"rightcolumn"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"hr-logo"</span><span style="color: #f92672">&gt;&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">"/hr/images/human-resources-logo.png"</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"Human Resources Department of Health"</span> <span style="color: #f92672">/&gt;&lt;/div&gt;</span>
+    <span style="color: #75715e">&lt;!--#include virtual="/hr/include/master-search.inc" --&gt;</span>
+    <span style="color: #75715e">&lt;!--#include virtual="/SectionFolderName/includes/quick_links-sectionName.inc" --&gt;</span>
+    <span style="color: #75715e">&lt;!-- #include virtual="/hr/include/aside-feedback.inc" --&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"opm-logo"</span><span style="color: #f92672">&gt;&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">"/hr/images/our-people-matter_logo.png"</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"Our people matter"</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">170</span><span style="color: #f92672">&gt;&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+            </div>
+            <h4 style="clear:left;">Links</h4>
+            <p>Your branch's structure may vary from the below or every section aside may not need both, but generally we include 3 sections:</p>
+            <ul>
+                <li><strong>Supporting resources</strong> &ndash; any documents that are either linked throughout the page body or provided as additional material.</li>
+                <li><strong>Related links</strong> &ndash; internal/external pages outside of the section nav.</li>
+                <li><strong>Need more help?</strong> &ndash; contact info tailored for the proper contact on the section's material and general HR Connect contact as a last resort.</li>
+            </ul>
+            <h6>Code example:</h6>
+            <!-- HTML generated using hilite.me -->
+            <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+                <pre style="margin: 0; line-height: 125%"><span style="color: #75715e">&lt;!-- Customise the sidebar links below as appropriate. If migrating a pre-existing list, simply copy and replace the enclosing anchor tags for each link. --&gt;</span>
+<span style="color: #75715e">&lt;!-- BEGIN Related links section --&gt;</span>
+<span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar_section"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;h3</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar"</span><span style="color: #f92672">&gt;</span>Related links<span style="color: #f92672">&lt;/h3&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"quick_links"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-ul"</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-globe fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>External link<span style="color: #f92672">&lt;/a&gt;&lt;/li&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-link fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Internal link<span style="color: #f92672">&lt;/a&gt;&lt;/li&gt;</span>
+        <span style="color: #f92672">&lt;/ul&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #75715e">&lt;!-- END Related links section --&gt;</span>
+<span style="color: #75715e">&lt;!-- BEGIN Supporting resources section --&gt;</span>
+<span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar_section"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;h3</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar"</span><span style="color: #f92672">&gt;</span>Supporting resources<span style="color: #f92672">&lt;/h3&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"quick_links"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-ul"</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;</span>
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-file-pdf-o fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>A PDF file that couldn't be a page<span style="color: #f92672">&lt;/a&gt;</span> (PDF, XXXkB)<span style="color: #f92672">&lt;/li&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;</span>
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-file-word-o fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Word file (probably a form)<span style="color: #f92672">&lt;/a&gt;</span> (DOC, XXXkB)<span style="color: #f92672">&lt;/li&gt;</span>
+        <span style="color: #f92672">&lt;/ul&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #75715e">&lt;!-- END Supporting resources section --&gt;</span>
+<span style="color: #75715e">&lt;!-- BEGIN Contact section --&gt;</span>
+<span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar_section"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;h3</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar"</span><span style="color: #f92672">&gt;</span>Need more help?<span style="color: #f92672">&lt;/h3&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"quick_links"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-ul"</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;</span>
+                <span style="color: #75715e">&lt;!-- Customise with section contact's direct email --&gt;</span>
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-envelope fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;strong&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"mailto:SectionContact@health.qld.gov.au"</span><span style="color: #f92672">&gt;</span>Email DeptName<span style="color: #f92672">&lt;/a&gt;&lt;/strong&gt;</span>
+            <span style="color: #f92672">&lt;/li&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-address-book fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"mailto:HRConnect@health.qld.gov.au"</span><span style="color: #f92672">&gt;</span>Email HR Connect<span style="color: #f92672">&lt;/a&gt;&lt;/li&gt;</span>
+        <span style="color: #f92672">&lt;/ul&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #75715e">&lt;!-- END Contact section --&gt;</span>
+</pre>
+            </div>
+            <h4 style="clear:left;">Place include within your pages RHS column section</h4>
+            <p>Lastly you need to link the <code>right_column-sectionName.inc</code> from the RHS column section towards the end of the TeamSite page builder.</p>
+            <h6>Code example:</h6>
+            <!-- HTML generated using hilite.me -->
+            <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+                <pre style="margin: 0; line-height: 125%"><span style="color: #75715e">&lt;!-- #include virtual="/FolderLocationOfYourSection/includes/right_column-sectionName.inc" --&gt;</span>
+</pre>
+            </div>
+        </div>
+    </div>
+    <h3>Page Banners</h3>
+    <div>
+        <p><img src="/hr/images/banner-example.jpg" alt="Page Banner image. Upload your image as below and use a class of 'banner-image'" class="banner-image" /></p>
+        <p>Banner images are responsive to the visitor's screen width. H Output these as 1770px x 320px and they will automatically scale up or down by giving them the class name <code>banner-image</code>.</p>
+        <p>Consider using minimal text that is sized large in order to scale down and still be legible.</p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">"/hr/images/banner-example.jpg"</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"Page Banner image. Upload your image and use a class of 'banner-image'"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"banner-image"</span><span style="color: #f92672">&gt;</span>
+</pre>
+        </div>
+    </div>
+</div>
+<h2>Layout options</h2>
+<div id="accordion">
+    <h3>Image Floats</h3>
+    <div><img height="80" width="80" src="#" alt="Image floated left" class="float-left" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id qui sint, delectus! Doloremque architecto vitae, atque similique. Harum id ea quibusdam debitis vel fugiat. Enim iste, accusamus fuga quidem iusto.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex impedit, dolor. Earum molestiae eos aspernatur repellat tempore itaque iusto odio omnis, debitis, officiis magnam explicabo unde facilis illum, amet laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quos voluptatem, labore aliquid natus qui dolores harum vero eum atque neque quod, sapiente illo? Vel et minus obcaecati non nihil.</p>
+        <img height="80" width="80" src="#" alt="Image floated right" class="float-right" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id qui sint, delectus! Doloremque architecto vitae, atque similique. Harum id ea quibusdam debitis vel fugiat. Enim iste, accusamus fuga quidem iusto.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex impedit, dolor. Earum molestiae eos aspernatur repellat tempore itaque iusto odio omnis, debitis, officiis magnam explicabo unde facilis illum, amet laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quos voluptatem, labore aliquid natus qui dolores harum vero eum atque neque quod, sapiente illo? Vel et minus obcaecati non nihil.</p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">""</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"ImageAltText"</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">??</span> <span style="color: #a6e22e">height=</span><span style="color: #e6db74">??</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"float-left"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">""</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"ImageAltText"</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">??</span> <span style="color: #a6e22e">height=</span><span style="color: #e6db74">??</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"float-right"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;p&gt;</span>InsertContentAfter<span style="color: #f92672">&lt;/p&gt;</span>
+</pre>
+        </div>
+    </div>
+    <h3>Tabular data</h3>
+    <div>
+        <p>This style is exclusively for data that lends itself to being displayed in table format. Per accessibility requirements, there must always be a heading for each column. Tables must not be used simply as a layout device.</p>
+        <table class="data">
+            <thead>
+                <tr>
+                    <th>Heading 1</th>
+                    <th>Heading 2</th>
+                    <th>Heading 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                </tr>
+                <tr>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                </tr>
+                <tr>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                </tr>
+                <tr>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;table</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"data"</span><span style="color: #f92672">&gt;</span> <span style="color: #75715e">&lt;!-- remove all inline styling --&gt;</span>
+    <span style="color: #f92672">&lt;thead&gt;</span>
+        <span style="color: #f92672">&lt;tr&gt;</span>
+            <span style="color: #f92672">&lt;th&gt;</span>Heading1<span style="color: #f92672">&lt;/th&gt;</span>
+            <span style="color: #f92672">&lt;th&gt;</span>Heading2<span style="color: #f92672">&lt;/th&gt;</span>
+            <span style="color: #f92672">&lt;th&gt;</span>Heading3<span style="color: #f92672">&lt;/th&gt;</span>
+        <span style="color: #f92672">&lt;/tr&gt;</span>
+    <span style="color: #f92672">&lt;/thead&gt;</span>
+    <span style="color: #f92672">&lt;tbody&gt;</span>
+        <span style="color: #f92672">&lt;tr&gt;</span>
+            <span style="color: #f92672">&lt;td&gt;</span>RowData<span style="color: #f92672">&lt;/td&gt;</span>
+            <span style="color: #f92672">&lt;td&gt;</span>RowData<span style="color: #f92672">&lt;/td&gt;</span>
+            <span style="color: #f92672">&lt;td&gt;</span>RowData<span style="color: #f92672">&lt;/td&gt;</span>
+        <span style="color: #f92672">&lt;/tr&gt;</span>
+    <span style="color: #f92672">&lt;/tbody&gt;</span>
+<span style="color: #f92672">&lt;/table&gt;</span>
+</pre>
+        </div>
+    </div>
+    <h3>Flexbox rows</h3>
+    <div>
+        <p>Flexbox table rows are for content that is not technically tabular data, but would still benefit from the layout properties of equal height columns that remain in a horizontal row without floating under each other. For instance, a small icon with a title or text accompanying it. If you have more than 2 columns and want a solution that is friendlier to narrow displays, consider using responsive grids below.</p>
+        <blockquote><strong>Technical note:</strong> These are now built using flexbox instead of css-tables for more flexibility<sup><a href="#" class="fn"><em class="fa fa-question-circle fa-lg"></em><span>No pun intended!</span></a></sup>. You can add multiple columns and the last column will take up the remaining horizontal space.</blockquote>
+        <div class="css-table">
+            <div class="col"><img height="50" width="50" src="#" alt="small icon" /></div>
+            <div class="col">
+                <h4>Title with icon</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ea veniam cupiditate totam ullam corporis impedit illum voluptatem recusandae, praesentium harum illo veritatis, nulla perspiciatis placeat itaque aut? Nostrum, voluptas.</p>
+            </div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"css-table"</span><span style="color: #f92672">&gt;</span>
+  <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">""</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"small icon"</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">75</span> <span style="color: #a6e22e">height=</span><span style="color: #e6db74">75</span><span style="color: #f92672">&gt;&lt;/div&gt;</span>
+  <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;h3&gt;</span>Title<span style="color: #f92672">&lt;/h3&gt;&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+        </div>
+    </div>
+    <h3>Responsive grids</h3>
+    <div>
+        <p>A grid framework from 2 to 8 columns is available when you wish to display columns of content that will be evenly distributed horizontally within the main body of your page. The responsive element to this ensures that as the page decreases in width, the columns reduce down gradually until the content is stacked vertically in one column.</p>
+        <p>This grid is used extensively for navigation button layouts but any combination of images, buttons, text or other media can be laid out in this fashion. If an image is the only content in a particular column, set it's width to 100% as it will then scale/expand down responsively with the column. Consequently you should produce an image that is as wide as the maximum width may be.</p>
+        <h4>1 to 2 columns (<code>col-1-2</code>)</h4>
+        <div class="row">
+            <div class="col-1-2"><img height="200" width="400" src="#" alt="Any content here" /></div>
+            <div class="col-1-2"><img height="200" width="400" src="#" alt="Any content here" /></div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-2&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-2&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+</pre>
+        </div>
+        <h4>1 to 3 columns (<code>col-1-3</code>)</h4>
+        <div class="row">
+            <div class="col-1-3">
+                <h2>Container: Text</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates expedita odio quos asperiores deleniti culpa, cumque sequi quibusdam, totam non, nihil quaerat enim autem quia id veritatis iste aut reprehenderit.</p>
+            </div>
+            <div class="col-1-3">
+                <h2>Container: Lists</h2>
+                <p>Lorem ipsum dolor sit amet:</p>
+                <ul>
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <div class="col-1-3">
+                <h2>Container: Mixed Content</h2>
+                <img height="50" width="50" src="#" alt="Image floated left" class="float-left" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates expedita odio quos asperiores deleniti culpa, cumque sequi quibusdam, totam non, nihil quaerat enim autem quia id veritatis iste aut reprehenderit.</p>
+            </div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-3&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-3&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-3&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+</pre>
+        </div>
+        <h4>1/3 &amp; 2/3 columns (<code>col-1-3</code>, <code>col-2-3</code>)</h4>
+        <div class="row">
+            <div class="col-1-3"><img height="200" width="250" src="#" alt="Any content here" /></div>
+            <div class="col-2-3">
+                <div class="box-content bg-faint-blue">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates expedita odio quos asperiores deleniti culpa, cumque sequi quibusdam, totam non, nihil quaerat enim autem quia id veritatis iste aut reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur veritatis illum suscipit, corporis pariatur molestiae, esse mollitia minus ducimus maiores facilis quae placeat tenetur libero laborum quis quam adipisci.</p>
+                </div>
+            </div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
+          <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-3&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+          <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-2-3&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+      <span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+</pre></div>
+        <h4>1 to 4 columns (<code>col-1-4</code>)</h4>
+        <div class="row">
+            <div class="col-1-4"><img height="60" width="200" src="#" alt="Any content here" /></div>
+            <div class="col-1-4"><img height="60" width="200" src="#" alt="Any content here" /></div>
+            <div class="col-1-4"><img height="60" width="200" src="#" alt="Any content here" /></div>
+            <div class="col-1-4"><img height="60" width="200" src="#" alt="Any content here" /></div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
+                <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-4&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+                <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-4&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+                <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-4&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+                <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-4&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+</pre></div>
+        <h4>1/4 &amp; 3/4 columns (<code>col-1-4</code>, <code>col-3-4</code>)</h4>
+        <div class="row">
+            <div class="col-1-4"><img height="60" width="200" src="#" alt="Any content here" /></div>
+            <div class="col-3-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates expedita odio quos asperiores deleniti culpa, cumque sequi quibusdam, totam non, nihil quaerat enim autem quia id veritatis iste aut reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur veritatis illum suscipit, corporis pariatur molestiae, esse mollitia minus ducimus maiores facilis quae placeat tenetur libero laborum quis quam adipisci.</p>
+            </div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-4&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-3-4&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+</pre></div>
+        <h4>1 to 6 columns (<code>col-1-6</code>)</h4>
+        <div class="row">
+            <div class="col-1-6"><img height="75" width="75" src="#" alt="Any content here" /></div>
+            <div class="col-1-6"><img height="75" width="75" src="#" alt="Any content here" /></div>
+            <div class="col-1-6"><img height="75" width="75" src="#" alt="Any content here" /></div>
+            <div class="col-1-6"><img height="75" width="75" src="#" alt="Any content here" /></div>
+            <div class="col-1-6"><img height="75" width="75" src="#" alt="Any content here" /></div>
+            <div class="col-1-6"><img height="75" width="75" src="#" alt="Any content here" /></div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
+              <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-6&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+              <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-6&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+              <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-6&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+              <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-6&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+              <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-6&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+              <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-6&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+          <span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+  </pre></div>
+        <h4>1 to 8 columns (<code>col-1-8</code>)</h4>
+        <div class="row">
+            <div class="col-1-8"><img height="75" width="75" src="#" alt="Any content here" /></div>
+            <div class="col-1-8"><img height="75" width="75" src="#" alt="Any content here" /></div>
+            <div class="col-1-8"><img height="75" width="75" src="#" alt="Any content here" /></div>
+            <div class="col-1-8"><img height="75" width="75" src="#" alt="Any content here" /></div>
+            <div class="col-1-8"><img height="75" width="75" src="#" alt="Any content here" /></div>
+            <div class="col-1-8"><img height="75" width="75" src="#" alt="Any content here" /></div>
+            <div class="col-1-8"><img height="75" width="75" src="#" alt="Any content here" /></div>
+            <div class="col-1-8"><img height="75" width="75" src="#" alt="Any content here" /></div>
+        </div>
+        <blockquote><strong>Technical note:</strong> The only difference in the code is substituting the <code>X</code> in the class name <code>col-1-X</code>. The grid blocks will automatically wrap depending on page width. You only need to manually break these up up with a closing <code>div</code> if you need to split them unevenly for thematic reasons.</blockquote>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-8&gt;AnyContentHere&lt;/div&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-8&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-8&gt;AnyContentHere&lt;/div&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-8&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-8&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-8&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-8&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-8&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
+</pre></div>
+    </div>
+    <h3>Accordions (vertical)</h3>
+    <div>
+        <p>You can include multiple accordions on the same page (behind the scenes they will be auto-numbered in order to be triggered individually).</p>
+        <p>You can't however nest an accordion inside another acccordion. See the entire contents of this page for multiple Vertical accordion examples.</p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">id=</span><span style="color: #e6db74">"accordion"</span><span style="color: #f92672">&gt;</span>
+<span style="color: #f92672">&lt;h3&gt;</span>Title1<span style="color: #f92672">&lt;/h3&gt;</span>
+<span style="color: #f92672">&lt;div&gt;</span>
+<span style="color: #f92672">&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;h3&gt;</span>Title2<span style="color: #f92672">&lt;/h3&gt;</span>
+<span style="color: #f92672">&lt;div&gt;</span>
+<span style="color: #f92672">&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;h3&gt;</span>Title3<span style="color: #f92672">&lt;/h3&gt;</span>
+<span style="color: #f92672">&lt;div&gt;</span>
+<span style="color: #f92672">&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+        </div>
+    </div>
+    <h3>Flowcharts</h3>
+    <div>
+        <div class="flowchart-vertical">
+            <div class="flowchart-box">
+                <div class="blue-grad-4">
+                    <p class="flowchart-box-title">Blue gradation 4</p>
+                    <ul>
+                        <li>item one</li>
+                        <li>item two</li>
+                        <li>item three</li>
+                    </ul>
+                    <div class="triangle-down"></div>
+                </div>
+            </div>
+            <div class="flowchart-box">
+                <div class="blue-grad-3">
+                    <p class="flowchart-box-title">Blue gradation 3</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quasi voluptates, illo quisquam perferendis a minus eveniet molestias, corrupti iusto tempore dolores tempora eaque fuga maiores. Quam, dignissimos dolor est?</p>
+                    <div class="triangle-down"></div>
+                </div>
+            </div>
+            <div class="flowchart-box">
+                <div class="blue-grad-2">
+                    <p class="flowchart-box-title">Blue gradation 2</p>
+                    <ul>
+                        <li>item one</li>
+                        <li>item two</li>
+                        <li>item three</li>
+                    </ul>
+                    <div class="triangle-down"></div>
+                </div>
+            </div>
+            <div class="flowchart-box">
+                <div class="blue-grad-1">
+                    <p class="flowchart-box-title">Blue gradation 1</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel cumque, dolor facere ipsam ipsa adipisci sint velit atque repellat, quo esse odio voluptas quibusdam culpa! Culpa est, iure debitis! Molestiae?</p>
+                </div>
+            </div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-vertical"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"blue-grad-4"</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box-title"</span><span style="color: #f92672">&gt;</span>Title4<span style="color: #f92672">&lt;/p&gt;</span>
+            <span style="color: #f92672">&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;</span>
+            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"triangle-down"</span><span style="color: #f92672">&gt;&lt;/div&gt;</span>
+        <span style="color: #f92672">&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"blue-grad-3"</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box-title"</span><span style="color: #f92672">&gt;</span>Title3<span style="color: #f92672">&lt;/p&gt;</span>
+            <span style="color: #f92672">&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;</span>
+            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"triangle-down"</span><span style="color: #f92672">&gt;&lt;/div&gt;</span>
+        <span style="color: #f92672">&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"blue-grad-2"</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box-title"</span><span style="color: #f92672">&gt;</span>Title2<span style="color: #f92672">&lt;/p&gt;</span>
+            <span style="color: #f92672">&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;</span>
+            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"triangle-down"</span><span style="color: #f92672">&gt;&lt;/div&gt;</span>
+        <span style="color: #f92672">&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"blue-grad-1"</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box-title"</span><span style="color: #f92672">&gt;</span>Title1<span style="color: #f92672">&lt;/p&gt;</span>
+            <span style="color: #f92672">&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;</span>
+        <span style="color: #f92672">&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+        </div>
+    </div>
+</div>
+<h2>Focus attention</h2>
+<div id="accordion">
+    <h3>Blockquotes</h3>
+    <div><span class="float-right">
+<blockquote class="large">&ldquo; This is a pullquote for highlighting an important point in a large body of text. It is a combination of: <strong>blockquote</strong> selector, <strong>quote</strong> and <strong>float-right</strong> classes.&rdquo;</blockquote>
+</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus porro corporis enim neque, blanditiis error nam dolores eveniet! Voluptatem enim ad vero ab. Doloremque ipsa quasi ipsum, nam, aspernatur ea? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo iure modi aut, ratione dolores? Nemo autem eum eaque? Laudantium quasi impedit, necessitatibus ea. Vitae magnam odio maxime porro, blanditiis eveniet.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos totam dolores commodi, amet eveniet hic voluptatem, corrupti recusandae alias inventore iusto dolore aut architecto, tenetur excepturi eaque nemo neque minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos totam dolores commodi, amet eveniet hic voluptatem, corrupti recusandae alias inventore iusto dolore aut architecto, tenetur excepturi eaque nemo neque minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;span</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"float-right"</span><span style="color: #f92672">&gt;&lt;blockquote</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"large"</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">&amp;ldquo;</span>InsertContentHere<span style="color: #f8f8f2">&amp;rdquo;</span><span style="color: #f92672">&lt;/blockquote&gt;</span>
+    <span style="color: #f92672">&lt;/span&gt;</span>
+</pre>
+        </div>
+        <blockquote>Note: this is the default blockquote at normal font size.</blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos totam dolores commodi, amet eveniet hic voluptatem, corrupti recusandae alias inventore iusto dolore aut architecto, tenetur excepturi eaque nemo neque minima.</p>
+        <blockquote class="large">&ldquo;Sometimes you need a larger quote style, such as in Testimonials. Just add the <strong>quote</strong> class.&rdquo; &ndash; Anonymous designer</blockquote>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;blockquote&gt;</span>
+    <span style="color: #f92672">&lt;p&gt;</span>InsertBlockQuoteHere<span style="color: #f92672">&lt;/p&gt;</span>
+<span style="color: #f92672">&lt;/blockquote&gt;</span>
+<span style="color: #f92672">&lt;blockquote</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"large"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f8f8f2">&amp;ldquo;</span>InsertQuoteHere<span style="color: #f8f8f2">&amp;rdquo;</span> <span style="color: #f8f8f2">&amp;mdash;</span> Author
+<span style="color: #f92672">&lt;/blockquote&gt;</span>
+</pre>
+        </div>
+    </div>
+    <h3 id="buttons">Buttons</h3>
+    <div>
+        <p>These are modeled off the commonplace Bootstrap-style buttons (officially used on Internet site for consistency). Typically they would be used to style an <code>a</code> anchor element, but technically the class can be applied to any container. If buttons are included in an aside, it's recommended to wrap in a <code>p</code> tag for better spacing.</p>
+        <h4>Standard button (btn)</h4>
+        <p>The button size automatically expands to fit the content. Any content placed inside a button will center vertically. Regardless of the following variations used, the <code>btn</code> class is always required.</p>
+        <p><a href="http://hmpg.net/" class="btn"><span>Click me!</span></a></p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"ButtonDestinationURL"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"btn"</span><span style="color: #f92672">&gt;</span>ButtonText<span style="color: #f92672">&lt;/a&gt;</span>
+</pre>
+        </div>
+        <h4>Large button (btn-lg)</h4>
+        <p>Same as standard button with larger text size. With any style you can include a fontawesome icon, and prepend it using the class <code>pull-left</code> or append it with <code>pull-right</code>.</p>
+        <p><a href="http://hmpg.net/" class="btn btn-lg"><em class="fa fa-star fa-lg pull-left"></em><span>Attention</span></a></p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"ButtonDestinationURL"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"btn btn-lg"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-star fa-lg pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>ButtonText<span style="color: #f92672">&lt;/a&gt;</span>
+</pre>
+        </div>
+        <h4>Nav button (btn-nav)</h4>
+        <p>The nav button style is similar to a large button with a fixed width to suit a 2, 3 or 4 across grid layout. This example further incorporates an image which are automatically floated left (height &amp; width must be specified), and a caret affixed to the far right using a <code>pull-right</code> class.</p>
+        <div class="row">
+            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-off-white black-text"><em class="fa fa-file-text-o fa-lg pull-left"></em><span>Font awesome icon small</span></a></div>
+            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-faint-blue black-text"><em class="fa fa-calendar fa-2x pull-left"></em><span>Font awesome icon large</span></a></div>
+            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-black"><span>No images</span><em class="fa fa-caret-right fa-lg pull-right"></em></a></div>
+            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-off-white black-text"><img height="50" width="50" src="/hr/staff-health-wellbeing/staff-wellbeing/images/events-cal-200x200.png" alt="icon" /><span>Custom graphic</span><em class="fa fa-caret-right fa-lg pull-right"></em></a></div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"ButtonDestinationURL"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"btn btn-nav bg-off-white black-text"</span><span style="color: #f92672">&gt;&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">""</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"icon"</span> <span style="color: #a6e22e">height=</span><span style="color: #e6db74">"40"</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">"40"</span><span style="color: #f92672">&gt;</span>ButtonText<span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-caret-right fa-lg pull-right"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>
+</pre>
+        </div>
+        <h4>Coloured buttons (bg-colorname)</h4>
+        <p>You can custom colour any button (or any block element for that matter). Pick a background color from the <a href="#colors">Colour palette</a> and replace the <code>bg-alert-red</code> class used in the example. Custom campaign colours should be added to the stylesheet as needed so that the hover state is applied correctly.</p>
+        <p>Note the addition of class <code>black-text</code> if the button is too light to have white text.</p>
+        <p><a href="http://hmpg.net/" class="btn btn-lg bg-alert-red"><em class="fa fa-warning fa-lg pull-left"></em><span>Custom colour</span></a></p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"ButtonDestinationURL"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"btn btn-lg bg-alert-red"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-warning fa-lg pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>ButtonText<span style="color: #f92672">&lt;/a&gt;</span>
+</pre>
+        </div>
+    </div>
+    <h3>Content boxes</h3>
+    <div>
+        <p>When you'd like to draw attention to some aside content that's not an alert, a simple content box will do the trick. This also makes a nice tiled effect within a responsive grid. The best background color classes to use are either <code>bg-faint-blue</code> or <code>bg-off-white</code>.</p>
+        <div class="row">
+            <div class="col-1-2">
+                <div class="box-content bg-faint-blue">
+                    <div class="css-table">
+                        <div class="col">
+                            <div class="btn btn-lg bg-blue"><em class="fa fa-snowflake-o fa-3x pull-left"></em><span>Winter&nbsp;is coming!</span></div>
+                        </div>
+                        <div class="col">
+                            <h3 class="text-blue">Put your attention grabbing aside content here.</h3> Tumeric yr listicle lo-fi readymade polaroid shoreditch marfa banh mi blue bottle church-key sriracha butcher. Tofu helvetica shoreditch pok pok selfies vexillologist actually affogato la croix pork belly pickled 90's bespoke.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"row"</span><span style="color: #f92672">&gt;</span>
+<span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col-1-2"</span><span style="color: #f92672">&gt;</span>
+<span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"box-content bg-faint-blue"</span><span style="color: #f92672">&gt;</span>
+<span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"css-table"</span><span style="color: #f92672">&gt;</span>
+<span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
+<span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"btn btn-lg bg-blue"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-star fa-3x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;span&gt;</span>Text!<span style="color: #f92672">&lt;/span&gt;&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
+<span style="color: #f92672">&lt;h3</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"text-blue"</span><span style="color: #f92672">&gt;</span>BoxTitle<span style="color: #f92672">&lt;/h3&gt;</span>
+BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+        </div>
+        <div class="box-content bg-off-white">
+            <h3>Additional information</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sapiente culpa, rem fuga vitae dignissimos magni sequi dolorem! Quae, maiores, fugit? Eius, mollitia animi debitis officia voluptatum deserunt voluptate quibusdam.</p>
+            <p><strong>Act now while supplies last!</strong></p>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"box-content bg-off-white"</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;div</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">""</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"btn btn-lg"</span><span style="color: #f92672">&gt;</span>Attention!<span style="color: #f92672">&lt;/div&gt;&lt;/div&gt;</span>
+            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
+<span style="color: #f92672">&lt;h3&gt;</span>BoxTitle<span style="color: #f92672">&lt;/h3&gt;</span>
+<span style="color: #f92672">&lt;p&gt;</span>BodyContentHere<span style="color: #f92672">&lt;/p&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+        <span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+        </div>
+    </div>
+    <h3>Feature boxes</h3>
+    <div>
+        <p>Feature boxes are special content highlight areas. Visually they work well one to three across. Suggested content would include: Page summaries, key dates, enclosures for event information, etc.</p>
+        <div class="row">
+            <div class="col-1-2">
+                <div class="box-feature">
+                    <div class="title">Event info</div>
+                    <ul>
+                        <li><strong>Title:</strong> Hands-on guide to opening presents</li>
+                        <li><strong>Date:</strong> 25 December 2017</li>
+                        <li><strong>Time:</strong> 9.00 am</li>
+                        <li><strong>Location:</strong> Around the Xmas tree</li>
+                    </ul>
+                    <p>You're a mean one, Mr. Grinch. Grandma got run over by a reindeer, walking home from our house Christmas eve. Snowing and blowing up bushels of fum, now the jingle hop has begun. I keep my distance but you still catch my eye. With those holiday greetings and gay happy meetings.</p>
+                </div>
+            </div>
+            <div class="col-1-2">
+                <div class="box-feature">
+                    <div class="title">Key preparations</div>
+                    <ul>
+                        <li>Hang mistletoe</li>
+                        <li>Make eggnog lattes</li>
+                        <li>Charge camera</li>
+                        <li>Hide "Santa's" wrapping paper</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"row"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col-1-2"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"box-feature"</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"title"</span><span style="color: #f92672">&gt;</span>FeatureTitle<span style="color: #f92672">&lt;/div&gt;</span>
+            <span style="color: #f92672">&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;</span>
+        <span style="color: #f92672">&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col-1-2"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"box-feature"</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"title"</span><span style="color: #f92672">&gt;</span>FeatureTitle<span style="color: #f92672">&lt;/div&gt;</span>
+            <span style="color: #f92672">&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;</span>
+        <span style="color: #f92672">&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+        </div>
+    </div>
+    <h3 id="#alerts">Alert boxes</h3>
+    <div>
+        <div class="alert-box success css-table">
+            <div class="col"><em class="fa fa-thumbs-up fa-4x pull-left"></em></div>
+            <div class="col">
+                <p class="alert-title success">Success Title (optional)</p>
+                <p>Success notice here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, illum exercitationem eveniet in iusto quae assumenda, temporibus illo ipsam quasi nesciunt aut omnis amet quibusdam tempore commodi. Non!</p>
+            </div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-box success css-table"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-thumbs-up fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-title success"</span><span style="color: #f92672">&gt;</span>SuccessTitle<span style="color: #f92672">&lt;/p&gt;</span>
+        <span style="color: #f92672">&lt;p&gt;</span>SuccessNoticeHere<span style="color: #f92672">&lt;/p&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+        </div>
+        <div class="alert-box info css-table">
+            <div class="col"><em class="fa fa-info-circle fa-4x pull-left"></em></div>
+            <div class="col">
+                <p class="alert-title info">Info Title (optional)</p>
+                <p>Info notice here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, illum exercitationem eveniet in iusto quae assumenda, temporibus illo ipsam quasi nesciunt aut omnis amet quibusdam tempore commodi. Non, ad!</p>
+            </div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-box info css-table"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-info-circle fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-title info"</span><span style="color: #f92672">&gt;</span>InfoTitle<span style="color: #f92672">&lt;/p&gt;</span>
+        <span style="color: #f92672">&lt;p&gt;</span>InfoNoticeHere<span style="color: #f92672">&lt;/p&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+        </div>
+        <div class="alert-box idea css-table">
+            <div class="col"><em class="fa fa-lightbulb-o fa-4x pull-left"></em></div>
+            <div class="col">
+                <p class="alert-title idea">Idea Title (optional)</p>
+                <p>Idea notice here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, illum exercitationem eveniet in iusto quae assumenda, temporibus illo ipsam quasi nesciunt aut omnis amet quibusdam tempore commodi. Non, ad!</p>
+            </div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-box idea css-table"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-lightbulb-o fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-title idea"</span><span style="color: #f92672">&gt;</span>IdeaTitle<span style="color: #f92672">&lt;/p&gt;</span>
+        <span style="color: #f92672">&lt;p&gt;</span>IdeaNoticeHere<span style="color: #f92672">&lt;/p&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+        </div>
+        <div class="alert-box warning css-table">
+            <div class="col"><em class="fa fa-warning fa-4x pull-left"></em></div>
+            <div class="col">
+                <p class="alert-title warning">Warning Title (optional)</p>
+                <p>Warning notice here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, illum exercitationem eveniet in iusto quae assumenda, temporibus illo ipsam quasi nesciunt aut omnis amet quibusdam tempore commodi. Non, ad!</p>
+            </div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-box warning css-table"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-warning fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-title warning"</span><span style="color: #f92672">&gt;</span>WarningTitle<span style="color: #f92672">&lt;/p&gt;</span>
+        <span style="color: #f92672">&lt;p&gt;</span>WarningNoticeHere<span style="color: #f92672">&lt;/p&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+        </div>
+        <div class="alert-box danger css-table">
+            <div class="col"><em class="fa fa-bolt fa-4x pull-left"></em></div>
+            <div class="col">
+                <p class="alert-title danger">Danger Title (optional)</p>
+                <p>Danger notice here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, illum exercitationem eveniet in iusto quae assumenda, temporibus illo ipsam quasi nesciunt aut omnis amet quibusdam tempore commodi. Non, ad!</p>
+            </div>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-box danger css-table"</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-bolt fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-title danger"</span><span style="color: #f92672">&gt;</span>DangerTitle<span style="color: #f92672">&lt;/p&gt;</span>
+        <span style="color: #f92672">&lt;p&gt;</span>DangerNoticeHere<span style="color: #f92672">&lt;/p&gt;</span>
+    <span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre>
+        </div>
+    </div>
+    <h3>Slideshows/Carousels</h3>
+    <div>
+        <p>A simple and responsive carousel slider is available beyond the previous QHEPS version. See the <a href="/hr">QHEPS HR homepage</a> for an example.</p>
+        <p>You will need:
+            <ul>
+                <li>Your images uploaded in an appropriate folder.</li>
+                <li>a new include file that lists all the slides (image path, title, description text)</li>
+                <li>an include line inserted on the page where the slideshow is to be displayed.</li>
+            </ul>
+        </p>
+        <p>The slideshow will use our default settings for speed, transition and random display. If you wish to customise this and know how to insert javascript within your page you can refer to the <a href="https://bxslider.com/options/">Bx-slider options page</a> for more info.</p>
+        <h4>Include file</h4>
+        <p>Customise the following template with your slide details and save with an appropriate name usually to your top-level /include folder.</p>
+        <p>We suggest a minimum of 3 and maximum of 5 slides at any one time. Given the time it's displayed and that visitors typically spend looking at these, your text should be large and descriptions as brief as possible.</p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%">      <span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;bxslider&quot;</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;li&gt;</span>
+        <span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;DestinationURLWhenImageIsClicked&quot;</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;PathToImage&quot;</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">&quot;AltTextForImage&quot;</span> <span style="color: #f92672">/&gt;&lt;/a&gt;</span>
+        <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;title&quot;</span><span style="color: #f92672">&gt;</span>Title<span style="color: #f92672">&lt;/p&gt;</span>
+        <span style="color: #f92672">&lt;p&gt;</span>ShortDescription<span style="color: #f92672">&lt;/p&gt;</span>
+    <span style="color: #f92672">&lt;/li&gt;</span>
+  <span style="color: #f92672">&lt;/ul&gt;</span>
+</pre></div>
+    </div>
+</div>
+<h2>More information</h2>
+<div id="accordion">
+    <h3>Abbreviations</h3>
+    <div>
+        <p>To meet accessibility requirements the first occurance of any Acronym on a page must be accompanied by the full name. Commonly this might be done in parentheses. If this seems overkill for commonly known ones, the minimum to meet requirements would be to use the <code><abbr title="Abbreviation">ABBR</abbr></code> tag.</p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;abbr</span> <span style="color: #a6e22e">title=</span><span style="color: #e6db74">"Department of Health"</span><span style="color: #f92672">&gt;</span>DoH<span style="color: #f92672">&lt;/abbr&gt;</span>
+</pre>
+        </div>
+    </div>
+    <h3>Footnotes</h3>
+    <div>This footnote solution is suitable for citations or simply some additional aside information rather than breaking the flow.<sup><a href="#" class="fn"><em class="fa fa-question-circle fa-lg"></em><span>Rather than the paper-bases paradigm of jumping to the bottom of the page and back, these footnotes will pop-up in a box to the right when the <em class="fa fa-question-circle fa-lg"></em>&nbsp;is hovered over.</span></a></sup>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;sup&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fn"</span><span style="color: #f92672">&gt;&lt;em</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-question-circle fa-lg"</span><span style="color: #f92672">&gt;&lt;/em&gt;&lt;span&gt;</span>InsertFootnoteHere<span style="color: #f92672">&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;</span>
+</pre>
+        </div>
+    </div>
+</div>
+<h2>Miscellaneous</h2>
+<div id="accordion">
+    <h3>Figure Caption</h3>
+    <div>
+        <p>Often it is appropriate to include some caption text underneath an image, chart, video, etc. There is a dedicated HTML5 tag for this call <code>figcaption</code>. TeamSite however does not recognise standardised HTML5 so in lieu of this just add a class by the same name to your paragraph tag.</p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;figcaption&quot;</span><span style="color: #f92672">&gt;</span>CaptionText<span style="color: #f92672">&lt;/p&gt;</span>
+</pre></div>
+    </div>
+    <h3>Hiding element</h3>
+    <div>
+        <p>At times you may wish to temporarily hide a section of your page instead of deleting. For instance, either it has a fixed campaign length but will likely be re-used next year or a page has been approved to publish except for parts of it that aren't yet.</p>
+        <p>Simply add the <code>hide</code> class to the opening tag of the element or entire section you wish to hide on the page.</p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;hide&quot;</span><span style="color: #f92672">&gt;</span>ContentToHide<span style="color: #f92672">&lt;/div&gt;</span>
+</pre></div>
+    </div>
+    <h3>Forms: Checkboxes &amp; Radio buttons</h3>
+    <div>
+        <p>If you are building a form (Contact, registration, etc.), the basic QHEPS template can be used (see HR feedback form as an example). It has been enhanced with responsive sizing and stylised checkboxes and radio buttons. Use the following template as an example for correct syntax on the checkboxes and radio buttons.</p>
+        <div class="hr-form bg-faint-blue">
+            <div id="r4f_form_wrapper">
+                <div width="100%" class="r4f_forms">
+                    <input type="checkbox" name="UniqueName" value="Signup Requested">
+                    <label><span></span>Sign me up!</label>
+                    <input type="radio" name="UniqueName2" value="ValueToPassToForm" class="fa-check">
+                    <label><span></span></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>Responsive embedded videos</h3>
+    <div>
+        <p>Sometimes we're asked to add a video to a page and you receive some <strong>embed code</strong> from the client or Production for a Vimeo or YouTube video. If you wrap the provided code in another <code>div</code> and give it the class <strong><code>video-container</code></strong>, it will automatically make the video responsive to the container's width, but with with a maximum width of 768px so it doesn't overwhelm the page on large displays. This could be the entire body section, part of a responsive grid layout, or any sized container.</p>
+        <div class="video-container"></div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"video-container"</span><span style="color: #f92672">&gt;&lt;iframe</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">"560"</span> <span style="color: #a6e22e">height=</span><span style="color: #e6db74">"315"</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">"https://www.youtube.com/embed/YBK_1WrM294?rel=0"</span> <span style="color: #a6e22e">frameborder=</span><span style="color: #e6db74">"0"</span> <span style="color: #a6e22e">allowfullscreen</span><span style="color: #f92672">&gt;&lt;/iframe&gt;&lt;/div&gt;</span>
+</pre>
+        </div>
+        <h4>Referencing from your TeamSite page</h4>
+        <p>As an example for any code like this that TeamSite doesn't comprehend, it must be saved externally as in XXX.inc file and linked as such.</p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #960050; background-color: #1e0010">!</span><span style="color: #f92672">--</span><span style="color: #75715e">#include virtual="/pathtofolder/video-example.inc" --&gt;</span>
+</pre>
+        </div>
+    </div>
+    <h3>Policy metadata</h3>
+    <div>
+        <div>
+            <ul class="fa-ul policy-metadata">
+                <li><em class="fa-li fa fa-file-pdf-o fa-lg"></em><a href="https://www.health.qld.gov.au/system-governance/policies-standards/doh-policy/policy/qh-pol-225.pdf">Self-flying</a> (PDF, 37KB)</li>
+                <li><em class="fa-li fa fa-calendar fa-lg"></em>Released: October 2014</li>
+                <li><em class="fa-li fa fa-user fa-lg"></em>Owner: Jane Doe</li>
+            </ul>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; clear: both; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-ul policy-metadata"</span><span style="color: #f92672">&gt;</span>
+          <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-file-pdf-o fa-lg"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"EnterPDFURL"</span><span style="color: #f92672">&gt;</span>Policy title<span style="color: #f92672">&lt;/a&gt; (PDF, xxKB)&lt;/li&gt;</span>
+          <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-calendar fa-lg"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Released: January 2017<span style="color: #f92672">&lt;/li&gt;</span>
+          <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-user fa-lg"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Owner: Jane Doe<span style="color: #f92672">&lt;/li&gt;</span>
+<span style="color: #f92672">&lt;/ul&gt;</span>
+</pre>
+        </div>
+    </div>
+    <h3>Just for fun (dev use only)</h3>
+    <div>
+        <h4>Blink Text</h4>
+        <p>When you really need to draw attention to something for a client during development, why not bring back the ol' Blinking Text? <span class="blink-text">Party like it's 1999!</span></p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;span</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"blink-text"</span><span style="color: #f92672">&gt;</span>Make this blink<span style="color: #f92672">&lt;/span&gt;</span>
+</pre>
+        </div>
+    </div>
+</div>
+<h2 id="colors">Colours</h2>
+<table class="data">
+    <thead>
+        <tr>
+            <th>HEX / RGB color codes</th>
+            <th>Name</th>
+            <th>Background class</th>
+            <th>Foreground class</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="btn btn-nav bg-black">#000 / rgb(0,0,0)</span></td>
+            <td>Black</td>
+            <td><code>bg-black</code></td>
+            <td><code>text-black</code></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-dark-blue">#08416A / rgb(8,65,106)</span></td>
+            <td>Our People matter blue</td>
+            <td><code>bg-dark-blue</code></td>
+            <td><code>text-dark-blue</code></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-blue">#1375BC / rgb(19,117,188)</span></td>
+            <td>Qld Health Operation blue</td>
+            <td><code>bg-blue</code></td>
+            <td><code>text-blue</code></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-mostly-blue">#4D98D1 / rgb(77,152,209)</span></td>
+            <td>Qld Health Operation blue (75%)</td>
+            <td><code>bg-mostly-blue</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-med-blue text-black">#8ABEED / rgb(138,190,237)</span></td>
+            <td>Qld Health Operation blue (50%)</td>
+            <td><code>bg-med-blue</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-light-blue text-black">#DDEFFD / rgb(221,239,253)</span></td>
+            <td>Qld Health Operation blue (25%)</td>
+            <td><code>bg-light-blue</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-faint-blue text-black">#EBF5FD / rgb(235,245,253)</span></td>
+            <td>Qld Health Operation blue (10%)</td>
+            <td><code>bg-faint-blue</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-green">#5EAC61 / rgb(94,172,97)</span></td>
+            <td>Our People Matter green</td>
+            <td><code>bg-green</code></td>
+            <td><code>text-green</code></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-mostly-green">#6FB572 / rgb(111,181,114)</span></td>
+            <td>Our People Matter green (75%)</td>
+            <td><code>bg-mostly-green</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-granny-smith">#75C045 / rgb(117,192,69)</span></td>
+            <td>Qld Health Granny Smith Green</td>
+            <td><code>bg-granny-smith</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-dark-grey">#49575A / rgb(73,87,90)</span></td>
+            <td>Qld Health Scientific grey (dark variation)</td>
+            <td><code>bg-dark-grey</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-med-grey">#B3BFB3 / rgb(179,191,179)</span></td>
+            <td>Qld Health Gentle treatment</td>
+            <td><code>bg-med-grey</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-raw-cotton text-black">#C0C5BE / rgb(192,197,190)</span></td>
+            <td>Qld Health Raw cotton</td>
+            <td><code>bg-raw-cotton</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-off-white text-black">#EEE / rgb(238,238,238)</span></td>
+            <td>Off white</td>
+            <td><code>bg-off-white</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-alert-green">#4f9A52 / rgb(79,154,82)</span></td>
+            <td>Alert: Success</td>
+            <td><code>bg-alert-green</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-alert-orange">#EB941A / rgb(235,148,26)</span></td>
+            <td>Alert: Warning</td>
+            <td><code>bg-alert-orange</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-alert-red">#A94442 / rgb(169,68,66)</span></td>
+            <td>Alert: Danger</td>
+            <td><code>bg-alert-red</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <h3>Campaign colours</h3>
+            </td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-wfq-orange">#F7941d / rgb(247,148,29)</span></td>
+            <td>Domestic Family Violence Orange</td>
+            <td><code>bg-dfv-orange</code></td>
+            <td><code>text-dfv-orange</code></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-wfq-orange">#F7941d / rgb(247,148,29)</span></td>
+            <td>Working for Queensland Orange</td>
+            <td><code>bg-wfq-orange</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-pride-orange">#F37526 / rgb(243,117,38)</span></td>
+            <td>Pride Orange</td>
+            <td><code>bg-pride-orange</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <h3>Department colours</h3>
+            </td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-hpsp-green">#076a16 / rgb(7,106,22)</span></td>
+            <td>HPSP Green</td>
+            <td><code>bg-hpsp-green</code></td>
+            <td><code>text-hpsp-green</code></td>
+        </tr>
+    </tbody>
+</table>

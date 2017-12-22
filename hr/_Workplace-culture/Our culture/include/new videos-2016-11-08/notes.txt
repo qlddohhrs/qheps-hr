@@ -1,0 +1,38 @@
+Capability - John Wakefield 
+
+<p>Listen to John Wakefield, DDG Clinical Excellence Division share his views on capability. </p>
+<!-- #include virtual="/hr/culture/include/capability-320w-v2.inc" -->
+<p>Video length (2mins, 1sec).</p>
+
+1. Okay to push live - 320w-v2
+2. Need to update resources page - change size of video to 160w
+3. Advise client & Lou, Joh, Rebecca
+
+
+*************************************************************************************************************************
+
+Clarity - Kathleen Forrester
+
+<p>Listen to Kathleen Forrester, DDG, Strategy, Policy and Planning Division share her views on clarity. </p>
+<!-- #include virtual="/hr/culture/include/clarity-320w-v2.inc" -->
+<p>Video length (0mins, 0sec).</p>
+
+1. ISSUE - 320w-v2 - error message - "Sorry Because of it's privacy settings, this video cannot be played here"
+2. Need to update resources page - change size of video to 160w
+3. Advise client & Lou, Joh, Rebecca
+
+
+*************************************************************************************************************************
+
+Performance - Libby Gregoric
+
+<p>Listen to Libby Gregoric, A/DDG, Corporate Services Division share her views on performance.</p>
+<!-- #include virtual="/hr/culture/include/performance-320w-v2.inc" -->
+<p>Video length (0mins, 0sec).</p>
+
+1. ISSUE - 320w-v2 - error message - "Sorry Because of it's privacy settings, this video cannot be played here"
+2. Need to update resources page - change size of video to 160w
+3. Advise client & Lou, Joh, Rebecca
+
+
+*************************************************************************************************************************
