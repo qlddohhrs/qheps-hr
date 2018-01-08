@@ -128,7 +128,7 @@
 
 <p>Currently the Font Awesome framework is being referenced through their CDN link with the recent addition of their FA5 update scripts that include Shims for backwards compatibility with FA4.
 Ideally post-Squiz migration, this library would be incorporated locally and using the Font Awesome 5 Pro complete version that we are now paying for. Latest version can be downloaded by signing in at <a href="https://fontawesome.com">FontAwesome.com</a>.
-In the interim, a CDN link for Font Awesome 5 Pro is apparently in the works and would be a one line swap in the custom-footer.</p>
+In the interim, a CDN link for Font Awesome 5 Pro is in their development pipeline and would be a one line swap in the <strong>custom-footer.inc</strong> file.</p>
 
 <h4 id="jqueryui">JQuery UI</h4>
 
@@ -180,19 +180,18 @@ In the interim, a CDN link for Font Awesome 5 Pro is apparently in the works and
 <ul>
 <li>saving previous version states</li>
 <li>document steps for saving version control</li>
-<li></li>
 </ul>
 
 <h2 id="post-squiz">Post-Squiz</h2>
 
-<h2 id="stylestoupdate">Styles to update</h2>
+<h3 id="stylestoupdate">Styles to update</h3>
 
 <ul>
 <li><code>#nav2 {margin: 0 15px;}</code> CHANGE TO <code>{margin: 15px;}</code></li>
 <li>At the top of <code>#contentblock30</code> in the QHEPS template, an extra <p> is inserted. Not sure if this can be removed from the new Squiz asset for this but it would be ideal for consistent alignment of all 3 sections.</li>
 </ul>
 
-<h2 id="issues">Issues</h2>
+<h3 id="issues">Issues</h3>
 
 <ul>
 <li>Carousel pagers</li>
@@ -205,7 +204,7 @@ In the interim, a CDN link for Font Awesome 5 Pro is apparently in the works and
 <li>Secondary nav display issue (partial green background) – confident this was rectified with instantiation of a custom ‘main_sec.inc’ file that removed all the previous styles from top.</li>
 </ul>
 
-<h2 id="filestorenameorre-organise">Files to rename or re-organise</h2>
+<h3 id="filestorenameorre-organise">Files to rename or re-organise</h3>
 
 <p>Squiz has the advantage of both:</p>
 
@@ -222,7 +221,7 @@ In the interim, a CDN link for Font Awesome 5 Pro is apparently in the works and
 <li>moving folders and documents around for consistency (i.e. docs, images folders out of global folder, etc.) Squiz is not particular about the visual organisational structure as everything is just an Asset number.</li>
 </ul>
 
-<h2 id="filestore-separate">Files to re-separate</h2>
+<h3 id="filestore-separate">Files to re-separate</h3>
 
 <p>The following files especially would be best to separate back in to individual components after the migration to Squiz Matrix. Reason being that the migration scripts apparently will combine into one file, any files that are a combination of include files that only TeamSite understands.</p>
 
@@ -278,7 +277,7 @@ In the interim, a CDN link for Font Awesome 5 Pro is apparently in the works and
 <hr />
 
 <p>Prepared by: Jason Shanks
-Last updated: 2017&#8211;12&#8211;22 13:06</p>
+Last updated: 2018&#8211;01&#8211;08 09:40</p>
 
 </body>
 </html>

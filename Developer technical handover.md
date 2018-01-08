@@ -82,7 +82,7 @@ This master folder includes the bulk of CSS, scripts and modular components used
 #### Font Awesome icons
 Currently the Font Awesome framework is being referenced through their CDN link with the recent addition of their FA5 update scripts that include Shims for backwards compatibility with FA4.
 Ideally post-Squiz migration, this library would be incorporated locally and using the Font Awesome 5 Pro complete version that we are now paying for. Latest version can be downloaded by signing in at [FontAwesome.com](https://fontawesome.com).
-In the interim, a CDN link for Font Awesome 5 Pro is apparently in the works and would be a one line swap in the custom-footer.
+In the interim, a CDN link for Font Awesome 5 Pro is  in their development pipeline and would be a one line swap in the **custom-footer.inc** file.
 #### JQuery UI
 The standard JQuery UI styles and script support features such as the Accordions.
 #### URL of current page
@@ -113,16 +113,15 @@ These secondary navigation menu files are normally created in TeamSite using the
 TeamSite itself has some simplified versioning with the features of:
 * saving previous version states
 * document steps for saving version control
-* 	
 
 ## Post-Squiz
 
-## Styles to update
+### Styles to update
 
 * `#nav2 {margin: 0 15px;}` CHANGE TO `{margin: 15px;}`
 * At the top of `#contentblock30` in the QHEPS template, an extra <p> is inserted. Not sure if this can be removed from the new Squiz asset for this but it would be ideal for consistent alignment of all 3 sections.
 
-## Issues
+### Issues
 * Carousel pagers
 * Nav2 not collapsing, Accordion expand/collapse caret also not displaying – I believe these 2 issues are related, potentially the top few lines of the custom footer code that was being cut-off.
 	* UPDATE: confirmed this external stylesheet was not loaded: <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -130,7 +129,7 @@ TeamSite itself has some simplified versioning with the features of:
 * Secondary nav display issue (partial green background) – confident this was rectified with instantiation of a custom ‘main_sec.inc’ file that removed all the previous styles from top.
 
 
-## Files to rename or re-organise
+### Files to rename or re-organise
 Squiz has the advantage of both:
 * respecting and allowing proper file name extensions
 * treating any file as an asset number. Renaming an asset should have little consequence (i.e. not breaking anywhere else they are referenced). 
@@ -140,7 +139,7 @@ A lot of the clean-up we have wanted to do during the course of using TeamSite b
 * page names for consistency across the site
 * moving folders and documents around for consistency (i.e. docs, images folders out of global folder, etc.) Squiz is not particular about the visual organisational structure as everything is just an Asset number.
 
-## Files to re-separate
+### Files to re-separate
 The following files especially would be best to separate back in to individual components after the migration to Squiz Matrix. Reason being that the migration scripts apparently will combine into one file, any files that are a combination of include files that only TeamSite understands.
 
 ### Main Footer
@@ -151,6 +150,7 @@ The main footer will end up combining:
 	* any included TeamSite virtual links that will need converting to Squiz-friendly normal style and script links.
 	* link to the style.inc (style.css) asset.
 * the custom Stylesheet (style.inc) which should be separated and renamed correctly as style.css
+
 ### Asides
 The right-column asides consist of the following parts that should be separately, especially before any changes are made to the global parts. There should still only be one for each section they are created for which totals around 30.
 * right_column-XXXX.inc – the framework file that includes branding (logos top and bottom) and the references all the included assets below.
@@ -171,4 +171,4 @@ The right-column asides consist of the following parts that should be separately
 
 - - - -
 Prepared by: Jason Shanks
-Last updated: 2017-12-22 13:06
+Last updated: 2018-01-08 09:40

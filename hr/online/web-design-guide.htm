@@ -1,5 +1,5 @@
 <!--
-<link rel="stylesheet" href="../includes/style.inc" mce_href="../includes/style.inc">
+<link rel="stylesheet" href="../includes/style.inc">
 -->
 <style>
 <!-- img {
@@ -15,24 +15,24 @@
     <li>visually distinguish what type of content can be expected where</li>
     <li>provide various ways to drawn attention to the content that matters most.</li>
 </ul>
-<p>As with anything, overuse can have diminishing returns.</p>
-<p>Some of these elements work best on their own, however most have been designed in a modular fashion allowing combinations of them where appropriate.</p>
-<ul>
-    <li>For <strong><abbr title="Subject Matter Experts">SMEs</abbr> and content creators</strong>, being aware of the possibilities below should at least give you a starting point on how your content can be organised and presented.</li>
-    <li>For <strong>Publishers</strong> a basic understanding of HTML &amp; CSS is expected. Adapting these individually to your content, or mix and matching these various building blocks should hopefully be straightforward.</li>
+<p>As with anything, overuse can have diminishing returns. We especially recommend reserving <strong>Accordions</strong> for lengthier pages that might previously have had a Table of Contents along top, or for the combining of multiple related pages. <strong>Buttons</strong> are easily overdone resulting in a loss of effectiveness.</p>
+<h3><abbr title="Subject Matter Experts">For SMEs</abbr> and content creators</h3>
+<p>Being aware of the possibilities below should at least give you a starting point on how your content could be organised and presented. They may also give you ideas on how to streamline and make your content more concise.</p>
+<h3>For Publishers</h3>
+<p>A basic understanding of HTML &amp; CSS is expected. Adapting these to your content should hopefully be straightforward. The placeholder text in the Code examples has been structured without spaces so you can just double-click and type or paste to replace. Many of the following elements can be mixed and matched where logical, some are already comprised of a combination.</p>
 </ul>
 <div class="alert-box info css-table">
-    <div class="col"><em class="fa fa-info-circle fa-4x pull-left"></em></div>
+    <div class="col"><em class="fas fa-info-circle fa-4x pull-left"></em></div>
     <div class="col">
         <p class="alert-title info">Training materials</p>
         <p>If you are following this guide for training. Please download the <a href="/hr/online/docs/training-resources.zip">training-resources</a> (ZIP, 1.9MB) package that includes some supplementary material.</p>
     </div>
 </div>
 <div class="alert-box info css-table">
-    <div class="col"><em class="fa fa-info-circle fa-4x pull-left"></em></div>
+    <div class="col"><em class="fas fa-info-circle fa-4x pull-left"></em></div>
     <div class="col">
         <p class="alert-title info">Brackets installer</p>
-        <p>Download the <a href="/hr/online/Brackets-1.11-manual-install.zip">Brackets 1.11 manual installer</a> (ZIP, 79MB) and follow the included instructions to use the free open-source Brackets editor for your code.</p>
+        <p>Download the <a href="/hr/online/docs/Brackets-1.11-manual-install.zip">Brackets 1.11 manual installer</a> (ZIP, 79MB) and follow the included instructions to use the free open-source Brackets editor for your code.</p>
     </div>
 </div>
 <h2>Basic HTML styles</h2>
@@ -54,36 +54,22 @@
     <div>
         <hr />
     </div>
-    <h3>Images</h3>
-    <div>
-        <h4>Full-width</h4>
-        <p>If you have an image that you want to ensure is stretched to the full width of it's container whether that be the entire body area of your page or inside any other box or container, just add the class <code>full-width</code>.</p>
-        <img src="/hr/online/images/demo-sunset-over-sea.jpg" alt="Sunset over the sea panoramic photo" class="full-width" />
-        <h6>Code example:</h6>
-        <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;PathToImage&quot;</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">&quot;AltDescriptionHere&quot;</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;full-width&quot;</span><span style="color: #f92672">/&gt;</span>
-</pre></div>
-        <h4>Magnify</h4>
-        <p>If you have an image that needs to be viewed large to see all the detail (charts, diagrams, etc.) but would prefer it didn't take up a lot of room on your page, you can use the <code>magnify</code> class to have it enlarge to twice the size when the cursor hovers over it. Just set the height and width at half the size of the original image size.</p>
-        <img height="332" width="300" src="/hr/online/images/demo-tree.jpg" alt="Tree of health image" class="magnify" />
-        <h6>Code example:</h6>
-        <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;img</span> <span style="color: #a6e22e">height=</span><span style="color: #e6db74">&quot;200&quot;</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">&quot;200&quot;</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;PathToImage&quot;</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">&quot;AltDescriptionHere&quot;</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;magnify&quot;</span><span style="color: #f92672">/&gt;</span>
-</pre></div>
-    </div>
 </div>
 <h2>Font Awesome icons</h2>
 <p>Icon fonts provide a quick and easy way to incorporate scalable vector images and adap them to your content's style. We have chosen the license-free <a href="http://fontawesome.io/">Font Awesome font and CSS toolkit</a> which is very commonly used and included by default in popular frameworks such as Bootstrap.</p>
-<link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet" />
 <div id="accordion">
     <h3>Anatomy of a Font Awesome icon tag</h3>
-    <div><img src="/hr/online/images/font-awesome-tag-example.png" alt="font awesome example code" class="full-width" />
+    <div>
+        <p class="center"><i class="far fa-hand-spock fa-3x" aria-hidden="true"></i></p>
+        <!-- HTML generated using hilite.me -->
+        <div style="overflow: auto ; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;far fa-li fa-hand-spock fa-3x&quot;</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">&quot;true&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>
+</pre></div>
         <p>The structure of a typical icon tag is comprised of:</p>
         <ul>
-            <li>Opening and closing <code><em></em></code>tags.</li>
-            <li>Class of <code>far</code> which is mandatory to indicate a Font Awesome icon. Options include:
+            <li>Opening and closing <code>i</code> tags.
+                <blockquote><strong>Note:</strong> Teamsite will convert these to <code>em</code> tags but they will still continue to function.</blockquote>
+            </li>
+            <li>Class of <code>far</code>. This is mandatory as it indicates a Font Awesome icon. Options include:
                 <ul>
                     <li><code>fas</code> = solid weight</li>
                     <li><code>far</code> = regular weight</li>
@@ -91,9 +77,9 @@
                     <li><code>fab</code> = specified when it's a brand icon (The search index below will tell you).</li>
                 </ul>
             </li>
-            <li><code>fa-li</code> is only used if you are placing within a list.</li>
-            <li><code>fa-globe</code> is the all important name class that represents your icon choice.</li>
-            <li><code>fa-lg</code> represents the size. Options include:
+            <li><code>fa-li</code> is only used if you are placing the icon within a list.</li>
+            <li><strong><code>fa-hand-spock</code></strong> is the all important name class that represents your icon choice.</li>
+            <li><code>fa-3x</code> represents the size. Options include:
                 <ul>
                     <li><code>fa-xs</code> = x-small</li>
                     <li><code>fa-sm</code> = small</li>
@@ -105,29 +91,29 @@
     </div>
     <h3>Icon index</h3>
     <div>
-        <p>If you are replacing an existing icon, the only change is the class that includes the icon name, eg. <code>fa-dollar</code>, <code>fa-calendar</code>.</p>
+        <p>If you are replacing an existing icon, the only change is the class that includes the icon name, eg. <code>fa-link</code>, <code>fa-calendar-check</code>.</p>
         <p>Here is a list of most commonly used ones.</p>
         <div class="quick_links">
             <ul class="fa-ul">
-                <li><em class="fa-li fa fa-circle fa-sm"></em>Bullet Point (fa-circle) &ndash; only icon with a size of <code>fa-sm</code></li>
-                <li><em class="fa-li fa fa-link fa-lg"></em>Chain link (fa-link) &ndash; internal links</li>
-                <li><em class="fa-li fa fa-globe fa-lg"></em>Globe (fa-globe) &ndash; external links</li>
-                <li><em class="fa-li fa fa-file-text fa-lg"></em>Text Doc (fa-file-text) &ndash; Word documents</li>
-                <li><em class="fa-li fa fa-file-pdf-o fa-lg"></em>PDF Doc (fa-file-pdf-o) &ndash; PDF documents</li>
-                <li><em class="fa-li fa fa-address-book fa-lg"></em>Contact (fa-address-book)</li>
-                <li><em class="fa-li fa fa-envelope fa-lg"></em>Email (fa-envelope)</li>
-                <li><em class="fa-li fa fa-calendar-check-o fa-lg"></em>Calendar Event Item fa-calendar-check-o)</li>
-                <li><em class="fa-li fa fa-calendar fa-lg"></em>Calendar (fa-calendar)</li>
-                <li><em class="fa-li fa fa-map-marker fa-lg"></em>Location/Map Marker (fa-map-marker)</li>
-                <li><em class="fa-li fa fa-dollar fa-lg"></em>Dollar Sign (fa-dollar)</li>
-                <li><em class="fa-li fa fa-warning fa-lg"></em>Warning_Safety (fa-warning)</li>
-                <li><em class="fa-li fa fa-user fa-lg"></em>User (fa-user)</li>
-                <li><em class="fa-li fa fa-phone fa-lg"></em>Phone (fa-phone)</li>
-                <li><em class="fa-li fa fa-question-circle fa-lg"></em>FAQ (fa-question-circle)</li>
+                <li><em class="fa-li fas fa-circle fa-sm"></em>Bullet Point (<code>fas fa-circle</code>) &ndash; only icon with a size of <code>fa-sm</code></li>
+                <li><em class="fa-li fas fa-link fa-lg"></em>Chain link (<code>fas fa-link</code>) &ndash; internal links</li>
+                <li><em class="fa-li fas fa-globe fa-lg"></em>Globe (<code>fas fa-globe</code>) &ndash; external links</li>
+                <li><em class="fa-li fas fa-file-word fa-lg"></em>Word Doc (<code>fas fa-file-word</code>) &ndash; Word documents</li>
+                <li><em class="fa-li fas fa-file-pdf fa-lg"></em>PDF Doc (<code>fas fa-file-pdf</code>) &ndash; PDF documents</li>
+                <li><em class="fa-li fas fa-address-book fa-lg"></em>Contact (<code>fas fa-address-book</code>)</li>
+                <li><em class="fa-li fas fa-envelope fa-lg"></em>Email (<code>fas fa-envelope</code>)</li>
+                <li><em class="fa-li far fa-calendar-check fa-lg"></em>Calendar Event Item (<code>far fa-calendar-check</code>)</li>
+                <li><em class="fa-li far fa-calendar-alt fa-lg"></em>Calendar (<code>far fa-calendar-alt</code>)</li>
+                <li><em class="fa-li fas fa-map-marker fa-lg"></em>Location/Map Marker (<code>fas fa-map-marker</code>)</li>
+                <li><em class="fa-li fas fa-dollar-sign fa-lg"></em>Dollar Sign (<code>fas fa-dollar-sign</ncode>)</li>
+                <li><em class="fa-li fas fa-exclamation-triangle fa-lg"></em>Warning_Safety (<code>fas fa-exclamation-triangle</code>)</li>
+                <li><em class="fa-li fas fa-user fa-lg"></em>User (<code>fas fa-user</code>)</li>
+                <li><em class="fa-li fas fa-phone fa-lg"></em>Phone (<code>fas fa-phone</code>)</li>
+                <li><em class="fa-li fas fa-question-circle fa-lg"></em>FAQ (<code>fas fa-question-circle)</code></li>
             </ul>
         </div>
         <p>For more options search the:
-            <br /><a href="https://fontawesome.com/icons" class="btn btn-lg"><em class="fa fa-flag fa-2x pull-left"></em><span>Font Awesome icons</span></a></p>
+            <br /><a href="https://fontawesome.com/icons" class="btn btn-lg"><em class="fas fa-flag fa-2x pull-left"></em><span>Font Awesome icons</span></a></p>
     </div>
     <h3>Usage examples</h3>
     <div>
@@ -136,54 +122,50 @@
         <p>Note the class of <code>fa-ul</code> in the enclosing unordered list. This is required for correct layout and spacing.</p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"quick_links"</span><span style="color: #f92672">&gt;</span> <span style="color: #75715e">&lt;!-- (class for right_column only) --&gt;</span>
-    <span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-ul"</span><span style="color: #f92672">&gt;</span>
-        <span style="color: #f92672">&lt;li&gt;</span>
-            <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-circle fa-sm"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>BulletPoint<span style="color: #f92672">&lt;/li&gt;</span>
-        <span style="color: #f92672">&lt;li&gt;</span>
-            <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-envelope fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Email<span style="color: #f92672">&lt;/li&gt;</span>
-        <span style="color: #f92672">&lt;li&gt;</span>
-            <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-file-pdf-o fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Link to a PDF file<span style="color: #f92672">&lt;/a&gt;</span> (PDF, 100kB)<span style="color: #f92672">&lt;/li&gt;</span>
-        <span style="color: #f92672">&lt;li&gt;</span>
-            <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-file-word-o fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Link to a Word doc<span style="color: #f92672">&lt;/a&gt;</span> (DOCX, 1.2MB)<span style="color: #f92672">&lt;/li&gt;</span>
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;quick_links&quot;</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #75715e">&lt;!-- (class for right_column only) --&gt;</span>
+    <span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fa-ul&quot;</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;li&gt;</span> <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fa-li fas fa-circle fa-sm&quot;</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">&quot;true&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>BulletPoint<span style="color: #f92672">&lt;/li&gt;</span>
+        <span style="color: #f92672">&lt;li&gt;</span> <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fa-li fas fa-envelope fa-lg&quot;</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">&quot;true&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Email<span style="color: #f92672">&lt;/li&gt;</span>
+        <span style="color: #f92672">&lt;li&gt;</span> <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fa-li fas fa-file-pdf fa-lg&quot;</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">&quot;true&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;#&quot;</span><span style="color: #f92672">&gt;</span>Link to a PDF file<span style="color: #f92672">&lt;/a&gt;</span> (PDF, 100kB)<span style="color: #f92672">&lt;/li&gt;</span>
+        <span style="color: #f92672">&lt;li&gt;</span> <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fa-li fas fa-file-word fa-lg&quot;</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">&quot;true&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;#&quot;</span><span style="color: #f92672">&gt;</span>Link to a Word doc<span style="color: #f92672">&lt;/a&gt;</span> (DOCX, 1.2MB)<span style="color: #f92672">&lt;/li&gt;</span>
     <span style="color: #f92672">&lt;/ul&gt;</span>
 <span style="color: #f92672">&lt;/div&gt;</span>
-</pre>
-        </div>
+</pre></div>
         <h4>Contact lists</h4>
         <p>Within the main content of a page, or inside an accordion &ndash; here is an example of a stylised contact list which is more favourable to a responsive layout than the all too common spreadsheet table view.</p>
         <ul class="contact-info fa-ul">
-            <li><em class="fa-li fa fa-map-marker fa-lg"></em>Outback, Australia </li>
-            <li><em class="fa-li fa fa-user fa-lg"></em>Easter Bilby </li>
-            <li><em class="fa-li fa fa-envelope fa-lg"></em><a href="mailto:Easter.Bilby@health.qld.gov.au">Easter.Bilby@health.qld.gov.au</a> </li>
-            <li><em class="fa-li fa fa-phone fa-lg"></em>07 3132 XXXX
+            <li><em class="fa-li fas fa-map-marker fa-lg"></em>Outback, Australia </li>
+            <li><em class="fa-li fas fa-user fa-lg"></em>Easter Bilby </li>
+            <li><em class="fa-li fas fa-envelope fa-lg"></em><a href="mailto:Easter.Bilby@health.qld.gov.au">Easter.Bilby@health.qld.gov.au</a> </li>
+            <li><em class="fa-li fas fa-phone fa-lg"></em>07 3132 XXXX
                 <br />0432 XXX XXX </li>
-            <li><em class="fa-li fa fa-link fa-lg"></em><a href="https://qheps.health.qld.gov.au">qheps.health.qld.gov.au</a> </li>
-            <li><em class="fa-li fa fa-globe fa-lg"></em><a href="http://www.qirc.qld.gov.au/">QIRC</a> </li>
+            <li><em class="fa-li fas fa-link fa-lg"></em><a href="https://qheps.health.qld.gov.au">qheps.health.qld.gov.au</a> </li>
+            <li><em class="fa-li fas fa-globe fa-lg"></em><a href="http://www.qirc.qld.gov.au/">QIRC</a> </li>
         </ul>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"contact-info fa-ul "</span><span style="color: #f92672">&gt;</span>
             <span style="color: #f92672">&lt;li&gt;</span>
-                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-map-marker fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Location
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-map-marker fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Location
             <span style="color: #f92672">&lt;/li&gt;</span>
             <span style="color: #f92672">&lt;li&gt;</span>
-                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-user fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Name
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-user fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Name
             <span style="color: #f92672">&lt;/li&gt;</span>
             <span style="color: #f92672">&lt;li&gt;</span>
-                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-envelope fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Email
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-envelope fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Email
             <span style="color: #f92672">&lt;/li&gt;</span>
             <span style="color: #f92672">&lt;li&gt;</span>
-                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-phone fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>07 3132 XXXX
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-phone fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>07 3132 XXXX
                 <span style="color: #f92672">&lt;br</span> <span style="color: #f92672">/&gt;</span>0432 XXX XXX
             <span style="color: #f92672">&lt;/li&gt;</span>
             <span style="color: #f92672">&lt;li&gt;</span>
-                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-link fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Website_internal
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-link fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Website_internal
             <span style="color: #f92672">&lt;/li&gt;</span>
             <span style="color: #f92672">&lt;li&gt;</span>
-                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-globe fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Website_external
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-globe fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Website_external
             <span style="color: #f92672">&lt;/li&gt;</span>
         <span style="color: #f92672">&lt;/ul&gt;</span>
 </pre>
@@ -226,7 +208,7 @@
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">id=</span><span style="color: #e6db74">"nav2"</span><span style="color: #f92672">&gt;&lt;a</span> <span style="color: #a6e22e">name=</span><span style="color: #e6db74">"sidenav"</span><span style="color: #f92672">&gt;&lt;/a&gt;</span>
                 <span style="color: #f92672">&lt;h3</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar"</span><span style="color: #f92672">&gt;</span>In this section<span style="color: #f92672">&lt;/h3&gt;</span>
                 <span style="color: #75715e">&lt;!--beginnoindex--&gt;</span>
@@ -282,10 +264,11 @@
             <h4 style="clear:left;">Branch search include</h4>
             <p>To customise the search, the <code>form action</code> needs to be adjusted with a comma-separated list of the site sections that searches should be narrowed to.</p>
             <p>For example: action="javascript: fbsearch('s-search','qheps.health.qld.gov.au<code>/hr</code>');"</p>
-            <h6>Code example:</h6>
-            <!-- HTML generated using hilite.me -->
-            <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-                <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar_section"</span><span style="color: #f92672">&gt;</span>
+        </div>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar_section"</span><span style="color: #f92672">&gt;</span>
     <span style="color: #f92672">&lt;h3</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar"</span><span style="color: #f92672">&gt;</span>Search BranchName<span style="color: #f92672">&lt;/h3&gt;</span>
     <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"hr-form hr-search"</span><span style="color: #f92672">&gt;</span>
         <span style="color: #f92672">&lt;script </span><span style="color: #a6e22e">type=</span><span style="color: #e6db74">"text/javascript"</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">"http://qheps.health.qld.gov.au/_includes/scripts/funnelback.js"</span><span style="color: #f92672">&gt;&lt;/script&gt;</span>
@@ -296,13 +279,13 @@
     <span style="color: #f92672">&lt;/div&gt;</span>
 <span style="color: #f92672">&lt;/div&gt;</span>
 </pre>
-            </div>
-            <h4 style="clear:left;">Right Column</h4>
-            <p>The only customisations needed here is verifying the links to your global includes are correct, and updating the URL to your <code>quick_links-sectionName.inc</code> file.</p>
-            <h6>Code example:</h6>
-            <!-- HTML generated using hilite.me -->
-            <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-                <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">id=</span><span style="color: #e6db74">"rightcolumn"</span><span style="color: #f92672">&gt;</span>
+        </div>
+        <h4 style="clear:left;">Right Column</h4>
+        <p>The only customisations needed here is verifying the links to your global includes are correct, and updating the URL to your <code>quick_links-sectionName.inc</code> file.</p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">id=</span><span style="color: #e6db74">"rightcolumn"</span><span style="color: #f92672">&gt;</span>
     <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"hr-logo"</span><span style="color: #f92672">&gt;&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">"/hr/images/human-resources-logo.png"</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"Human Resources Department of Health"</span> <span style="color: #f92672">/&gt;&lt;/div&gt;</span>
     <span style="color: #75715e">&lt;!--#include virtual="/hr/include/master-search.inc" --&gt;</span>
     <span style="color: #75715e">&lt;!--#include virtual="/SectionFolderName/includes/quick_links-sectionName.inc" --&gt;</span>
@@ -310,25 +293,25 @@
     <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"opm-logo"</span><span style="color: #f92672">&gt;&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">"/hr/images/our-people-matter_logo.png"</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"Our people matter"</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">170</span><span style="color: #f92672">&gt;&lt;/div&gt;</span>
 <span style="color: #f92672">&lt;/div&gt;</span>
 </pre>
-            </div>
-            <h4 style="clear:left;">Links</h4>
-            <p>Your branch's structure may vary from the below or every section aside may not need both, but generally we include 3 sections:</p>
-            <ul>
-                <li><strong>Supporting resources</strong> &ndash; any documents that are either linked throughout the page body or provided as additional material.</li>
-                <li><strong>Related links</strong> &ndash; internal/external pages outside of the section nav.</li>
-                <li><strong>Need more help?</strong> &ndash; contact info tailored for the proper contact on the section's material and general HR Connect contact as a last resort.</li>
-            </ul>
-            <h6>Code example:</h6>
-            <!-- HTML generated using hilite.me -->
-            <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-                <pre style="margin: 0; line-height: 125%"><span style="color: #75715e">&lt;!-- Customise the sidebar links below as appropriate. If migrating a pre-existing list, simply copy and replace the enclosing anchor tags for each link. --&gt;</span>
+        </div>
+        <h4 style="clear:left;">Links</h4>
+        <p>Your branch's structure may vary from the below or every section aside may not need both, but generally we include 3 sections:</p>
+        <ul>
+            <li><strong>Supporting resources</strong> &ndash; any documents that are either linked throughout the page body or provided as additional material.</li>
+            <li><strong>Related links</strong> &ndash; internal/external pages outside of the section nav.</li>
+            <li><strong>Need more help?</strong> &ndash; contact info tailored for the proper contact on the section's material and general HR Connect contact as a last resort.</li>
+        </ul>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #75715e">&lt;!-- Customise the sidebar links below as appropriate. If migrating a pre-existing list, simply copy and replace the enclosing anchor tags for each link. --&gt;</span>
 <span style="color: #75715e">&lt;!-- BEGIN Related links section --&gt;</span>
 <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar_section"</span><span style="color: #f92672">&gt;</span>
     <span style="color: #f92672">&lt;h3</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"sidebar"</span><span style="color: #f92672">&gt;</span>Related links<span style="color: #f92672">&lt;/h3&gt;</span>
     <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"quick_links"</span><span style="color: #f92672">&gt;</span>
         <span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-ul"</span><span style="color: #f92672">&gt;</span>
-            <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-globe fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>External link<span style="color: #f92672">&lt;/a&gt;&lt;/li&gt;</span>
-            <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-link fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Internal link<span style="color: #f92672">&lt;/a&gt;&lt;/li&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-globe fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>External link<span style="color: #f92672">&lt;/a&gt;&lt;/li&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-link fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Internal link<span style="color: #f92672">&lt;/a&gt;&lt;/li&gt;</span>
         <span style="color: #f92672">&lt;/ul&gt;</span>
     <span style="color: #f92672">&lt;/div&gt;</span>
 <span style="color: #f92672">&lt;/div&gt;</span>
@@ -339,9 +322,9 @@
     <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"quick_links"</span><span style="color: #f92672">&gt;</span>
         <span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-ul"</span><span style="color: #f92672">&gt;</span>
             <span style="color: #f92672">&lt;li&gt;</span>
-                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-file-pdf-o fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>A PDF file that couldn't be a page<span style="color: #f92672">&lt;/a&gt;</span> (PDF, XXXkB)<span style="color: #f92672">&lt;/li&gt;</span>
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-file-pdf fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>A PDF file that couldn't be a page<span style="color: #f92672">&lt;/a&gt;</span> (PDF, XXXkB)<span style="color: #f92672">&lt;/li&gt;</span>
             <span style="color: #f92672">&lt;li&gt;</span>
-                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-file-word-o fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Word file (probably a form)<span style="color: #f92672">&lt;/a&gt;</span> (DOC, XXXkB)<span style="color: #f92672">&lt;/li&gt;</span>
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-file-word fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span><span style="color: #f92672">&gt;</span>Word file (probably a form)<span style="color: #f92672">&lt;/a&gt;</span> (DOC, XXXkB)<span style="color: #f92672">&lt;/li&gt;</span>
         <span style="color: #f92672">&lt;/ul&gt;</span>
     <span style="color: #f92672">&lt;/div&gt;</span>
 <span style="color: #f92672">&lt;/div&gt;</span>
@@ -353,23 +336,22 @@
         <span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-ul"</span><span style="color: #f92672">&gt;</span>
             <span style="color: #f92672">&lt;li&gt;</span>
                 <span style="color: #75715e">&lt;!-- Customise with section contact's direct email --&gt;</span>
-                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-envelope fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;strong&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"mailto:SectionContact@health.qld.gov.au"</span><span style="color: #f92672">&gt;</span>Email DeptName<span style="color: #f92672">&lt;/a&gt;&lt;/strong&gt;</span>
+                <span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-envelope fa-lg"</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;strong&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"mailto:SectionContact@health.qld.gov.au"</span><span style="color: #f92672">&gt;</span>Email DeptName<span style="color: #f92672">&lt;/a&gt;&lt;/strong&gt;</span>
             <span style="color: #f92672">&lt;/li&gt;</span>
-            <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-address-book fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"mailto:HRConnect@health.qld.gov.au"</span><span style="color: #f92672">&gt;</span>Email HR Connect<span style="color: #f92672">&lt;/a&gt;&lt;/li&gt;</span>
+            <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-address-book fa-lg "</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">"true "</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"mailto:HRConnect@health.qld.gov.au"</span><span style="color: #f92672">&gt;</span>Email HR Connect<span style="color: #f92672">&lt;/a&gt;&lt;/li&gt;</span>
         <span style="color: #f92672">&lt;/ul&gt;</span>
     <span style="color: #f92672">&lt;/div&gt;</span>
 <span style="color: #f92672">&lt;/div&gt;</span>
 <span style="color: #75715e">&lt;!-- END Contact section --&gt;</span>
 </pre>
-            </div>
-            <h4 style="clear:left;">Place include within your pages RHS column section</h4>
-            <p>Lastly you need to link the <code>right_column-sectionName.inc</code> from the RHS column section towards the end of the TeamSite page builder.</p>
-            <h6>Code example:</h6>
-            <!-- HTML generated using hilite.me -->
-            <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-                <pre style="margin: 0; line-height: 125%"><span style="color: #75715e">&lt;!-- #include virtual="/FolderLocationOfYourSection/includes/right_column-sectionName.inc" --&gt;</span>
+        </div>
+        <h4 style="clear:left;">Place include within your pages RHS column section</h4>
+        <p>Lastly you need to link the <code>right_column-sectionName.inc</code> from the RHS column section towards the end of the TeamSite page builder.</p>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #75715e">&lt;!-- #include virtual="/FolderLocationOfYourSection/includes/right_column-sectionName.inc" --&gt;</span>
 </pre>
-            </div>
         </div>
     </div>
     <h3>Page Banners</h3>
@@ -379,7 +361,7 @@
         <p>Consider using minimal text that is sized large in order to scale down and still be legible.</p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">"/hr/images/banner-example.jpg"</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"Page Banner image. Upload your image and use a class of 'banner-image'"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"banner-image"</span><span style="color: #f92672">&gt;</span>
 </pre>
         </div>
@@ -396,7 +378,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex impedit, dolor. Earum molestiae eos aspernatur repellat tempore itaque iusto odio omnis, debitis, officiis magnam explicabo unde facilis illum, amet laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quos voluptatem, labore aliquid natus qui dolores harum vero eum atque neque quod, sapiente illo? Vel et minus obcaecati non nihil.</p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">""</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"ImageAltText"</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">??</span> <span style="color: #a6e22e">height=</span><span style="color: #e6db74">??</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"float-left"</span><span style="color: #f92672">&gt;</span>
     <span style="color: #f92672">&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">""</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"ImageAltText"</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">??</span> <span style="color: #a6e22e">height=</span><span style="color: #e6db74">??</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"float-right"</span><span style="color: #f92672">&gt;</span>
     <span style="color: #f92672">&lt;p&gt;</span>InsertContentAfter<span style="color: #f92672">&lt;/p&gt;</span>
@@ -405,7 +387,9 @@
     </div>
     <h3>Tabular data</h3>
     <div>
-        <p>This style is exclusively for data that lends itself to being displayed in table format. Per accessibility requirements, there must always be a heading for each column. Tables must not be used simply as a layout device.</p>
+        <p>This style is exclusively for data that lends itself to being displayed in a table/spreadsheet format. Per accessibility requirements, there must always be a heading for each column.</p>
+        <p>To implement this style all you need is to add the <code>data</code> class to the table tag of a fully-structured table. If you are updating a pre-existing table, any inline styling should be removed.</p>
+        <blockquote><strong>Note:</strong>Tables must not be used for the layout of non-data content. See the other layout options within this section instead.</blockquote>
         <table class="data">
             <thead>
                 <tr>
@@ -439,8 +423,8 @@
         </table>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;table</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"data"</span><span style="color: #f92672">&gt;</span> <span style="color: #75715e">&lt;!-- remove all inline styling --&gt;</span>
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;table</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"data"</span><span style="color: #f92672">&gt;</span>
     <span style="color: #f92672">&lt;thead&gt;</span>
         <span style="color: #f92672">&lt;tr&gt;</span>
             <span style="color: #f92672">&lt;th&gt;</span>Heading1<span style="color: #f92672">&lt;/th&gt;</span>
@@ -458,11 +442,64 @@
 <span style="color: #f92672">&lt;/table&gt;</span>
 </pre>
         </div>
+        <h4>Table with 2 header rows</h4>
+        <table class="data">
+            <thead>
+                <tr>
+                    <th rowspan="2">Heading 1</th>
+                    <th rowspan="2">Heading 2</th>
+                    <th colspan="2">Heading 3</th>
+                </tr>
+                <tr>
+                    <th>Subheading 1</th>
+                    <th>Subheading 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                </tr>
+                <tr>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                    <td>Row Data</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;table</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;data&quot;</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;thead&gt;</span>
+                <span style="color: #f92672">&lt;tr&gt;</span>
+                    <span style="color: #f92672">&lt;th</span> <span style="color: #a6e22e">rowspan=</span><span style="color: #e6db74">&quot;2&quot;</span><span style="color: #f92672">&gt;</span>Heading1<span style="color: #f92672">&lt;/th&gt;</span>
+                    <span style="color: #f92672">&lt;th</span> <span style="color: #a6e22e">rowspan=</span><span style="color: #e6db74">&quot;2&quot;</span><span style="color: #f92672">&gt;</span>Heading2<span style="color: #f92672">&lt;/th&gt;</span>
+                    <span style="color: #f92672">&lt;th</span> <span style="color: #a6e22e">colspan=</span><span style="color: #e6db74">&quot;2&quot;</span><span style="color: #f92672">&gt;</span>Heading3<span style="color: #f92672">&lt;/th&gt;</span>
+                <span style="color: #f92672">&lt;/tr&gt;</span>
+                <span style="color: #f92672">&lt;tr&gt;</span>
+                    <span style="color: #f92672">&lt;th&gt;</span>Subheading1<span style="color: #f92672">&lt;/th&gt;</span>
+                    <span style="color: #f92672">&lt;th&gt;</span>Subheading2<span style="color: #f92672">&lt;/th&gt;</span>
+                <span style="color: #f92672">&lt;/tr&gt;</span>
+            <span style="color: #f92672">&lt;/thead&gt;</span>
+            <span style="color: #f92672">&lt;tbody&gt;</span>
+                <span style="color: #f92672">&lt;tr&gt;</span>
+                    <span style="color: #f92672">&lt;td&gt;</span>RowData<span style="color: #f92672">&lt;/td&gt;</span>
+                    <span style="color: #f92672">&lt;td&gt;</span>RowData<span style="color: #f92672">&lt;/td&gt;</span>
+                    <span style="color: #f92672">&lt;td&gt;</span>RowData<span style="color: #f92672">&lt;/td&gt;</span>
+                    <span style="color: #f92672">&lt;td&gt;</span>RowData<span style="color: #f92672">&lt;/td&gt;</span>
+                <span style="color: #f92672">&lt;/tr&gt;</span>
+            <span style="color: #f92672">&lt;/tbody&gt;</span>
+        <span style="color: #f92672">&lt;/table&gt;</span>
+</pre></div>
     </div>
     <h3>Flexbox rows</h3>
     <div>
         <p>Flexbox table rows are for content that is not technically tabular data, but would still benefit from the layout properties of equal height columns that remain in a horizontal row without floating under each other. For instance, a small icon with a title or text accompanying it. If you have more than 2 columns and want a solution that is friendlier to narrow displays, consider using responsive grids below.</p>
-        <blockquote><strong>Technical note:</strong> These are now built using flexbox instead of css-tables for more flexibility<sup><a href="#" class="fn"><em class="fa fa-question-circle fa-lg"></em><span>No pun intended!</span></a></sup>. You can add multiple columns and the last column will take up the remaining horizontal space.</blockquote>
+        <blockquote><strong>Technical note:</strong> These are now built using flexbox instead of css-tables for more flexibility<sup><a href="#" class="fn"><em class="fas fa-question-circle fa-lg"></em><span>No pun intended!</span></a></sup>. You can add multiple columns and the last column will take up the remaining horizontal space.</blockquote>
         <div class="css-table">
             <div class="col"><img height="50" width="50" src="#" alt="small icon" /></div>
             <div class="col">
@@ -472,7 +509,7 @@
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"css-table"</span><span style="color: #f92672">&gt;</span>
   <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">""</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"small icon"</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">75</span> <span style="color: #a6e22e">height=</span><span style="color: #e6db74">75</span><span style="color: #f92672">&gt;&lt;/div&gt;</span>
   <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;h3&gt;</span>Title<span style="color: #f92672">&lt;/h3&gt;&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;&lt;/div&gt;</span>
@@ -491,7 +528,7 @@
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
             <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-2&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
             <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-2&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
@@ -521,7 +558,7 @@
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
             <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-3&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
             <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-3&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
@@ -540,7 +577,7 @@
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
           <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-3&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
           <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-2-3&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
@@ -555,7 +592,7 @@
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
                 <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-4&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
                 <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-4&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
@@ -572,7 +609,7 @@
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
             <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-4&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
             <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-3-4&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
@@ -589,7 +626,7 @@
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
               <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-6&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
               <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-6&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
@@ -613,7 +650,7 @@
         <blockquote><strong>Technical note:</strong> The only difference in the code is substituting the <code>X</code> in the class name <code>col-1-X</code>. The grid blocks will automatically wrap depending on page width. You only need to manually break these up up with a closing <code>div</code> if you need to split them unevenly for thematic reasons.</blockquote>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
             <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-8&gt;AnyContentHere&lt;/div&gt;</span>
             <span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">div</span> <span style="color: #f8f8f2">class</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col-1-8&quot;</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">AnyContentHere</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">div</span><span style="color: #f92672">&gt;</span>
@@ -632,7 +669,7 @@
         <p>You can't however nest an accordion inside another acccordion. See the entire contents of this page for multiple Vertical accordion examples.</p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">id=</span><span style="color: #e6db74">"accordion"</span><span style="color: #f92672">&gt;</span>
 <span style="color: #f92672">&lt;h3&gt;</span>Title1<span style="color: #f92672">&lt;/h3&gt;</span>
 <span style="color: #f92672">&lt;div&gt;</span>
@@ -661,15 +698,15 @@
                         <li>item two</li>
                         <li>item three</li>
                     </ul>
-                    <div class="triangle-down"></div>
                 </div>
+                <div class="triangle-down"><i class="fas fa-caret-down fa-9x" aria-hidden="true"></i></div>
             </div>
             <div class="flowchart-box">
                 <div class="blue-grad-3">
                     <p class="flowchart-box-title">Blue gradation 3</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quasi voluptates, illo quisquam perferendis a minus eveniet molestias, corrupti iusto tempore dolores tempora eaque fuga maiores. Quam, dignissimos dolor est?</p>
-                    <div class="triangle-down"></div>
                 </div>
+                <div class="triangle-down"><i class="fas fa-caret-down fa-9x" aria-hidden="true"></i></div>
             </div>
             <div class="flowchart-box">
                 <div class="blue-grad-2">
@@ -679,8 +716,8 @@
                         <li>item two</li>
                         <li>item three</li>
                     </ul>
-                    <div class="triangle-down"></div>
                 </div>
+                <div class="triangle-down"><i class="fas fa-caret-down fa-9x" aria-hidden="true"></i></div>
             </div>
             <div class="flowchart-box">
                 <div class="blue-grad-1">
@@ -691,38 +728,37 @@
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-vertical"</span><span style="color: #f92672">&gt;</span>
-    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box"</span><span style="color: #f92672">&gt;</span>
-        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"blue-grad-4"</span><span style="color: #f92672">&gt;</span>
-            <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box-title"</span><span style="color: #f92672">&gt;</span>Title4<span style="color: #f92672">&lt;/p&gt;</span>
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;flowchart-vertical&quot;</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;flowchart-box&quot;</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;blue-grad-4&quot;</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;flowchart-box-title&quot;</span><span style="color: #f92672">&gt;</span>Title4<span style="color: #f92672">&lt;/p&gt;</span>
             <span style="color: #f92672">&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;</span>
-            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"triangle-down"</span><span style="color: #f92672">&gt;&lt;/div&gt;</span>
         <span style="color: #f92672">&lt;/div&gt;</span>
+        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;triangle-down&quot;</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fas fa-caret-down fa-9x&quot;</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">&quot;true&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
     <span style="color: #f92672">&lt;/div&gt;</span>
-    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box"</span><span style="color: #f92672">&gt;</span>
-        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"blue-grad-3"</span><span style="color: #f92672">&gt;</span>
-            <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box-title"</span><span style="color: #f92672">&gt;</span>Title3<span style="color: #f92672">&lt;/p&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;flowchart-box&quot;</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;blue-grad-3&quot;</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;flowchart-box-title&quot;</span><span style="color: #f92672">&gt;</span>Title3<span style="color: #f92672">&lt;/p&gt;</span>
             <span style="color: #f92672">&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;</span>
-            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"triangle-down"</span><span style="color: #f92672">&gt;&lt;/div&gt;</span>
         <span style="color: #f92672">&lt;/div&gt;</span>
+        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;triangle-down&quot;</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fas fa-caret-down fa-9x&quot;</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">&quot;true&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
     <span style="color: #f92672">&lt;/div&gt;</span>
-    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box"</span><span style="color: #f92672">&gt;</span>
-        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"blue-grad-2"</span><span style="color: #f92672">&gt;</span>
-            <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box-title"</span><span style="color: #f92672">&gt;</span>Title2<span style="color: #f92672">&lt;/p&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;flowchart-box&quot;</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;blue-grad-2&quot;</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;flowchart-box-title&quot;</span><span style="color: #f92672">&gt;</span>Title2<span style="color: #f92672">&lt;/p&gt;</span>
             <span style="color: #f92672">&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;</span>
-            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"triangle-down"</span><span style="color: #f92672">&gt;&lt;/div&gt;</span>
         <span style="color: #f92672">&lt;/div&gt;</span>
+        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;triangle-down&quot;</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fas fa-caret-down fa-9x&quot;</span> <span style="color: #a6e22e">aria-hidden=</span><span style="color: #e6db74">&quot;true&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
     <span style="color: #f92672">&lt;/div&gt;</span>
-    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box"</span><span style="color: #f92672">&gt;</span>
-        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"blue-grad-1"</span><span style="color: #f92672">&gt;</span>
-            <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"flowchart-box-title"</span><span style="color: #f92672">&gt;</span>Title1<span style="color: #f92672">&lt;/p&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;flowchart-box&quot;</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;blue-grad-1&quot;</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;flowchart-box-title&quot;</span><span style="color: #f92672">&gt;</span>Title1<span style="color: #f92672">&lt;/p&gt;</span>
             <span style="color: #f92672">&lt;p&gt;</span>InsertContentHere<span style="color: #f92672">&lt;/p&gt;</span>
         <span style="color: #f92672">&lt;/div&gt;</span>
     <span style="color: #f92672">&lt;/div&gt;</span>
 <span style="color: #f92672">&lt;/div&gt;</span>
-</pre>
-        </div>
+</pre></div>
     </div>
 </div>
 <h2>Focus attention</h2>
@@ -736,7 +772,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos totam dolores commodi, amet eveniet hic voluptatem, corrupti recusandae alias inventore iusto dolore aut architecto, tenetur excepturi eaque nemo neque minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;span</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"float-right"</span><span style="color: #f92672">&gt;&lt;blockquote</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"large"</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">&amp;ldquo;</span>InsertContentHere<span style="color: #f8f8f2">&amp;rdquo;</span><span style="color: #f92672">&lt;/blockquote&gt;</span>
     <span style="color: #f92672">&lt;/span&gt;</span>
 </pre>
@@ -746,7 +782,7 @@
         <blockquote class="large">&ldquo;Sometimes you need a larger quote style, such as in Testimonials. Just add the <strong>quote</strong> class.&rdquo; &ndash; Anonymous designer</blockquote>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;blockquote&gt;</span>
     <span style="color: #f92672">&lt;p&gt;</span>InsertBlockQuoteHere<span style="color: #f92672">&lt;/p&gt;</span>
 <span style="color: #f92672">&lt;/blockquote&gt;</span>
@@ -758,47 +794,65 @@
     </div>
     <h3 id="buttons">Buttons</h3>
     <div>
-        <p>These are modeled off the commonplace Bootstrap-style buttons (officially used on Internet site for consistency). Typically they would be used to style an <code>a</code> anchor element, but technically the class can be applied to any container. If buttons are included in an aside, it's recommended to wrap in a <code>p</code> tag for better spacing.</p>
-        <h4>Standard button (btn)</h4>
-        <p>The button size automatically expands to fit the content. Any content placed inside a button will center vertically. Regardless of the following variations used, the <code>btn</code> class is always required.</p>
+        <p>These are modeled off the commonplace Bootstrap-style buttons (officially used on Internet site for consistency). Typically they would be used to style an <code>a</code> anchor element, but technically the class can be applied to any container. If buttons are included in an aside, it's recommended to wrap in a <code>p</code> tag for better spacing vertical.</p>
+        <h4>Standard button (<code>btn</code>)</h4>
+        <p>The button size automatically expands to fit the content. Any content placed inside a button will center vertically. Additionally, your text should be enclosed in a <code>span</code> tag to assure spacing from objects left/right of it. Regardless of other variations used below, the <code>btn</code> class is always required.</p>
         <p><a href="http://hmpg.net/" class="btn"><span>Click me!</span></a></p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"ButtonDestinationURL"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"btn"</span><span style="color: #f92672">&gt;</span>ButtonText<span style="color: #f92672">&lt;/a&gt;</span>
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;ButtonDestinationURL&quot;</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;btn&quot;</span><span style="color: #f92672">&gt;&lt;span&gt;</span>ButtonText<span style="color: #f92672">&lt;/span&gt;&lt;/a&gt;</span>
 </pre>
         </div>
-        <h4>Large button (btn-lg)</h4>
+        <h4>Large button (<code>btn-lg</code>)</h4>
         <p>Same as standard button with larger text size. With any style you can include a fontawesome icon, and prepend it using the class <code>pull-left</code> or append it with <code>pull-right</code>.</p>
-        <p><a href="http://hmpg.net/" class="btn btn-lg"><em class="fa fa-star fa-lg pull-left"></em><span>Attention</span></a></p>
+        <p><a href="http://hmpg.net/" class="btn btn-lg"><em class="fas fa-star fa-lg pull-left"></em><span>Attention</span></a></p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"ButtonDestinationURL"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"btn btn-lg"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-star fa-lg pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>ButtonText<span style="color: #f92672">&lt;/a&gt;</span>
-</pre>
-        </div>
-        <h4>Nav button (btn-nav)</h4>
-        <p>The nav button style is similar to a large button with a fixed width to suit a 2, 3 or 4 across grid layout. This example further incorporates an image which are automatically floated left (height &amp; width must be specified), and a caret affixed to the far right using a <code>pull-right</code> class.</p>
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;ButtonDestinationURL&quot;</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;btn btn-lg&quot;</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fas fa-star fa-lg pull-left&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;span&gt;</span>ButtonText<span style="color: #f92672">&lt;/span&gt;&lt;/a&gt;</span>
+</pre></div>
+        <h4>Nav button (<code>btn-nav</code>)</h4>
+        <p>The navigation button style is similar to a large button but takes up all available horizontal space. These should only be used within a Responsive grid to achieve an evenly spaced row of buttons.</p>
+        <p>Here is an example of our most common type consisting of a medium Font Awesome icon+Text+right caret appended to the far right using a <code>pull-right</code> class.</p>
         <div class="row">
-            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-off-white black-text"><em class="fa fa-file-text-o fa-lg pull-left"></em><span>Font awesome icon small</span></a></div>
-            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-faint-blue black-text"><em class="fa fa-calendar fa-2x pull-left"></em><span>Font awesome icon large</span></a></div>
+            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-off-white text-black"><em class="fas fa-life-ring fa-2x pull-left"></em><span>Font awesome icon 2x</span><em class="fas fa-caret-right fa-lg pull-right"></em></a></div>
+            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-faint-blue text-black"><em class="fa fa-calendar fa-2x pull-left"></em><span>Font awesome icon large</span></a></div>
             <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-black"><span>No images</span><em class="fa fa-caret-right fa-lg pull-right"></em></a></div>
-            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-off-white black-text"><img height="50" width="50" src="/hr/staff-health-wellbeing/staff-wellbeing/images/events-cal-200x200.png" alt="icon" /><span>Custom graphic</span><em class="fa fa-caret-right fa-lg pull-right"></em></a></div>
+            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-off-white text-black"><img height="50" width="50" src="/hr/staff-health-wellbeing/staff-wellbeing/images/events-cal-200x200.png" alt="icon" /><span>Custom graphic</span><em class="fa fa-caret-right fa-lg pull-right"></em></a></div>
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"ButtonDestinationURL"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"btn btn-nav bg-off-white black-text"</span><span style="color: #f92672">&gt;&lt;img</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">""</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">"icon"</span> <span style="color: #a6e22e">height=</span><span style="color: #e6db74">"40"</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">"40"</span><span style="color: #f92672">&gt;</span>ButtonText<span style="color: #f92672">&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-caret-right fa-lg pull-right"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>
-</pre>
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;col-1-4&quot;</span><span style="color: #f92672">&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;ButtonDestinationURL&quot;</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;btn btn-nav bg-off-white text-blue&quot;</span><span style="color: #f92672">&gt;&lt;em</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fas fa-life-ring fa-2x pull-left&quot;</span><span style="color: #f92672">&gt;&lt;/em&gt;&lt;span&gt;</span>ButtonText<span style="color: #f92672">&lt;/span&gt;&lt;em</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fas fa-caret-right fa-lg pull-right&quot;</span><span style="color: #f92672">&gt;&lt;/em&gt;&lt;/a&gt;&lt;/div&gt;</span>
+        <span style="color: #f92672">&lt;/div&gt;</span>
+</pre></div>
+        <p>This example demonstrates a row of: 2x Font awesome icon, 3x icon, text only, and an image which is automatically floated left (height &amp; width must be specified, we recommend 50px by 50px) with a caret.</p>
+        <div class="row">
+            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-off-white text-black"><em class="far fa-file-alt fa-2x pull-left"></em><span>Font awesome icon 2x</span></a></div>
+            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-faint-blue text-black"><em class="far fa-calendar-alt fa-3x pull-left"></em><span>Font awesome icon 3x</span></a></div>
+            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-black"><span>No images</span><em class="fas fa-caret-right fa-lg pull-right"></em></a></div>
+            <div class="col-1-4"><a href="http://hmpg.net/" class="btn btn-nav bg-off-white text-black"><img height="50" width="50" src="/hr/staff-health-wellbeing/staff-wellbeing/images/events-cal-200x200.png" alt="icon" /><span>Custom graphic</span><em class="fas fa-caret-right fa-lg pull-right"></em></a></div>
         </div>
-        <h4>Coloured buttons (bg-colorname)</h4>
+        <h6>Code example:</h6>
+        <!-- HTML generated using hilite.me -->
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;row&quot;</span><span style="color: #f92672">&gt;</span>
+            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;col-1-4&quot;</span><span style="color: #f92672">&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;ButtonDestinationURL&quot;</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;btn btn-nav bg-off-white text-black&quot;</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;far fa-file-alt fa-2x pull-left&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;span&gt;</span>ButtonText<span style="color: #f92672">&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;</span>
+            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;col-1-4&quot;</span><span style="color: #f92672">&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;ButtonDestinationURL&quot;</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;btn btn-nav bg-faint-blue text-black&quot;</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;far fa-calendar-alt fa-3x pull-left&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;span&gt;</span>ButtonText<span style="color: #f92672">&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;</span>
+            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;col-1-4&quot;</span><span style="color: #f92672">&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;ButtonDestinationURL&quot;</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;btn btn-nav bg-black&quot;</span><span style="color: #f92672">&gt;&lt;span&gt;</span>ButtonText<span style="color: #f92672">&lt;/span&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fas fa-caret-right fa-lg pull-right&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;</span>
+            <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;col-1-4&quot;</span><span style="color: #f92672">&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;ButtonDestinationURL&quot;</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;btn btn-nav bg-off-white text-black&quot;</span><span style="color: #f92672">&gt;&lt;img</span> <span style="color: #a6e22e">height=</span><span style="color: #e6db74">&quot;50&quot;</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">&quot;50&quot;</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;PathToImage&quot;</span> <span style="color: #a6e22e">alt=</span><span style="color: #e6db74">&quot;icon&quot;</span> <span style="color: #f92672">/&gt;&lt;span&gt;</span>CustomGraphic<span style="color: #f92672">&lt;/span&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fas fa-caret-right fa-lg pull-right&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;</span>
+</pre></div>
+        <h4>Coloured buttons (<code>bg-colorname</code>)</h4>
         <p>You can custom colour any button (or any block element for that matter). Pick a background color from the <a href="#colors">Colour palette</a> and replace the <code>bg-alert-red</code> class used in the example. Custom campaign colours should be added to the stylesheet as needed so that the hover state is applied correctly.</p>
-        <p>Note the addition of class <code>black-text</code> if the button is too light to have white text.</p>
-        <p><a href="http://hmpg.net/" class="btn btn-lg bg-alert-red"><em class="fa fa-warning fa-lg pull-left"></em><span>Custom colour</span></a></p>
+        <p>Note the addition of class <code>text-black</code> if the button is too light to have white text.</p>
+        <p><a href="http://hmpg.net/" class="btn btn-lg bg-alert-red"><em class="fas fa-exclamation-triangle fa-lg pull-left"></em><span>Custom colour</span></a></p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"ButtonDestinationURL"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"btn btn-lg bg-alert-red"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-warning fa-lg pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>ButtonText<span style="color: #f92672">&lt;/a&gt;</span>
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;ButtonDestinationURL&quot;</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;btn btn-lg bg-alert-red&quot;</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;fas fa-exclamation-triangle fa-lg pull-left&quot;</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;span&gt;</span>ButtonText<span style="color: #f92672">&lt;/span&gt;&lt;/a&gt;</span>
 </pre>
         </div>
     </div>
@@ -810,23 +864,23 @@
                 <div class="box-content bg-faint-blue">
                     <div class="css-table">
                         <div class="col">
-                            <div class="btn btn-lg bg-blue"><em class="fa fa-snowflake-o fa-3x pull-left"></em><span>Winter&nbsp;is coming!</span></div>
+                            <div class="btn btn-lg bg-blue"><em class="far fa-snowflake fa-3x pull-left"></em><span>Winter&nbsp;is coming!</span></div>
                         </div>
                         <div class="col">
-                            <h3 class="text-blue">Put your attention grabbing aside content here.</h3> Tumeric yr listicle lo-fi readymade polaroid shoreditch marfa banh mi blue bottle church-key sriracha butcher. Tofu helvetica shoreditch pok pok selfies vexillologist actually affogato la croix pork belly pickled 90's bespoke.</div>
+                            <h3 class="text-blue">Put your attention grabbing aside content here.</h3> Tumeric yr listicle lo-fi readymade polaroid shoreditch marfabanh mi blue bottle church-key sriracha butcher. Tofu helvetica shoreditch pok pok selfies vexillologist actually affogato la croix pork belly pickled 90's bespoke.</div>
                     </div>
                 </div>
             </div>
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"row"</span><span style="color: #f92672">&gt;</span>
 <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col-1-2"</span><span style="color: #f92672">&gt;</span>
 <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"box-content bg-faint-blue"</span><span style="color: #f92672">&gt;</span>
 <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"css-table"</span><span style="color: #f92672">&gt;</span>
 <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
-<span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"btn btn-lg bg-blue"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-star fa-3x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;span&gt;</span>Text!<span style="color: #f92672">&lt;/span&gt;&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"btn btn-lg bg-blue"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fas fa-star fa-3x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;span&gt;</span>Text!<span style="color: #f92672">&lt;/span&gt;&lt;/div&gt;</span>
 <span style="color: #f92672">&lt;/div&gt;</span>
 <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
 <span style="color: #f92672">&lt;h3</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"text-blue"</span><span style="color: #f92672">&gt;</span>BoxTitle<span style="color: #f92672">&lt;/h3&gt;</span>
@@ -844,7 +898,7 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"box-content bg-off-white"</span><span style="color: #f92672">&gt;</span>
             <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;div</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">""</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"btn btn-lg"</span><span style="color: #f92672">&gt;</span>Attention!<span style="color: #f92672">&lt;/div&gt;&lt;/div&gt;</span>
             <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
@@ -885,7 +939,7 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"row"</span><span style="color: #f92672">&gt;</span>
     <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col-1-2"</span><span style="color: #f92672">&gt;</span>
         <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"box-feature"</span><span style="color: #f92672">&gt;</span>
@@ -906,7 +960,7 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
     <h3 id="#alerts">Alert boxes</h3>
     <div>
         <div class="alert-box success css-table">
-            <div class="col"><em class="fa fa-thumbs-up fa-4x pull-left"></em></div>
+            <div class="col"><em class="fas fa-thumbs-up fa-4x pull-left"></em></div>
             <div class="col">
                 <p class="alert-title success">Success Title (optional)</p>
                 <p>Success notice here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, illum exercitationem eveniet in iusto quae assumenda, temporibus illo ipsam quasi nesciunt aut omnis amet quibusdam tempore commodi. Non!</p>
@@ -914,9 +968,9 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-box success css-table"</span><span style="color: #f92672">&gt;</span>
-    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-thumbs-up fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fas fa-thumbs-up fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
     <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
         <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-title success"</span><span style="color: #f92672">&gt;</span>SuccessTitle<span style="color: #f92672">&lt;/p&gt;</span>
         <span style="color: #f92672">&lt;p&gt;</span>SuccessNoticeHere<span style="color: #f92672">&lt;/p&gt;</span>
@@ -925,7 +979,7 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
 </pre>
         </div>
         <div class="alert-box info css-table">
-            <div class="col"><em class="fa fa-info-circle fa-4x pull-left"></em></div>
+            <div class="col"><em class="fas fa-info-circle fa-4x pull-left"></em></div>
             <div class="col">
                 <p class="alert-title info">Info Title (optional)</p>
                 <p>Info notice here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, illum exercitationem eveniet in iusto quae assumenda, temporibus illo ipsam quasi nesciunt aut omnis amet quibusdam tempore commodi. Non, ad!</p>
@@ -933,9 +987,9 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-box info css-table"</span><span style="color: #f92672">&gt;</span>
-    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-info-circle fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fas fa-info-circle fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
     <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
         <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-title info"</span><span style="color: #f92672">&gt;</span>InfoTitle<span style="color: #f92672">&lt;/p&gt;</span>
         <span style="color: #f92672">&lt;p&gt;</span>InfoNoticeHere<span style="color: #f92672">&lt;/p&gt;</span>
@@ -944,7 +998,7 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
 </pre>
         </div>
         <div class="alert-box idea css-table">
-            <div class="col"><em class="fa fa-lightbulb-o fa-4x pull-left"></em></div>
+            <div class="col"><em class="far fa-lightbulb fa-4x pull-left"></em></div>
             <div class="col">
                 <p class="alert-title idea">Idea Title (optional)</p>
                 <p>Idea notice here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, illum exercitationem eveniet in iusto quae assumenda, temporibus illo ipsam quasi nesciunt aut omnis amet quibusdam tempore commodi. Non, ad!</p>
@@ -952,9 +1006,9 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-box idea css-table"</span><span style="color: #f92672">&gt;</span>
-    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-lightbulb-o fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"far fa-lightbulb fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
     <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
         <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-title idea"</span><span style="color: #f92672">&gt;</span>IdeaTitle<span style="color: #f92672">&lt;/p&gt;</span>
         <span style="color: #f92672">&lt;p&gt;</span>IdeaNoticeHere<span style="color: #f92672">&lt;/p&gt;</span>
@@ -963,7 +1017,7 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
 </pre>
         </div>
         <div class="alert-box warning css-table">
-            <div class="col"><em class="fa fa-warning fa-4x pull-left"></em></div>
+            <div class="col"><em class="fas fa-exclamation-triangle fa-4x pull-left"></em></div>
             <div class="col">
                 <p class="alert-title warning">Warning Title (optional)</p>
                 <p>Warning notice here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, illum exercitationem eveniet in iusto quae assumenda, temporibus illo ipsam quasi nesciunt aut omnis amet quibusdam tempore commodi. Non, ad!</p>
@@ -971,9 +1025,9 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-box warning css-table"</span><span style="color: #f92672">&gt;</span>
-    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-warning fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fas fa-exclamation-triangle fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
     <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
         <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-title warning"</span><span style="color: #f92672">&gt;</span>WarningTitle<span style="color: #f92672">&lt;/p&gt;</span>
         <span style="color: #f92672">&lt;p&gt;</span>WarningNoticeHere<span style="color: #f92672">&lt;/p&gt;</span>
@@ -982,7 +1036,7 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
 </pre>
         </div>
         <div class="alert-box danger css-table">
-            <div class="col"><em class="fa fa-bolt fa-4x pull-left"></em></div>
+            <div class="col"><em class="fas fa-bolt fa-4x pull-left"></em></div>
             <div class="col">
                 <p class="alert-title danger">Danger Title (optional)</p>
                 <p>Danger notice here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, illum exercitationem eveniet in iusto quae assumenda, temporibus illo ipsam quasi nesciunt aut omnis amet quibusdam tempore commodi. Non, ad!</p>
@@ -990,9 +1044,9 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-box danger css-table"</span><span style="color: #f92672">&gt;</span>
-    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-bolt fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+    <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fas fa-bolt fa-4x pull-left"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;/div&gt;</span>
     <span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"col"</span><span style="color: #f92672">&gt;</span>
         <span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"alert-title danger"</span><span style="color: #f92672">&gt;</span>DangerTitle<span style="color: #f92672">&lt;/p&gt;</span>
         <span style="color: #f92672">&lt;p&gt;</span>DangerNoticeHere<span style="color: #f92672">&lt;/p&gt;</span>
@@ -1017,7 +1071,7 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
         <p>We suggest a minimum of 3 and maximum of 5 slides at any one time. Given the time it's displayed and that visitors typically spend looking at these, your text should be large and descriptions as brief as possible.</p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%">      <span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;bxslider&quot;</span><span style="color: #f92672">&gt;</span>
     <span style="color: #f92672">&lt;li&gt;</span>
         <span style="color: #f92672">&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;DestinationURLWhenImageIsClicked&quot;</span><span style="color: #f92672">&gt;</span>
@@ -1036,17 +1090,17 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
         <p>To meet accessibility requirements the first occurance of any Acronym on a page must be accompanied by the full name. Commonly this might be done in parentheses. If this seems overkill for commonly known ones, the minimum to meet requirements would be to use the <code><abbr title="Abbreviation">ABBR</abbr></code> tag.</p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;abbr</span> <span style="color: #a6e22e">title=</span><span style="color: #e6db74">"Department of Health"</span><span style="color: #f92672">&gt;</span>DoH<span style="color: #f92672">&lt;/abbr&gt;</span>
 </pre>
         </div>
     </div>
     <h3>Footnotes</h3>
-    <div>This footnote solution is suitable for citations or simply some additional aside information rather than breaking the flow.<sup><a href="#" class="fn"><em class="fa fa-question-circle fa-lg"></em><span>Rather than the paper-bases paradigm of jumping to the bottom of the page and back, these footnotes will pop-up in a box to the right when the <em class="fa fa-question-circle fa-lg"></em>&nbsp;is hovered over.</span></a></sup>
+    <div>This footnote solution is suitable for citations or simply some additional aside information rather than breaking the flow.<sup><a href="#" class="fn"><em class="fas fa-question-circle fa-lg"></em><span>Rather than the paper-bases paradigm of jumping to the bottom of the page and back, these footnotes will pop-up in a box to the right when the <em class="fas fa-question-circle fa-lg"></em>&nbsp;is hovered over.</span></a></sup>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
-            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;sup&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fn"</span><span style="color: #f92672">&gt;&lt;em</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa fa-question-circle fa-lg"</span><span style="color: #f92672">&gt;&lt;/em&gt;&lt;span&gt;</span>InsertFootnoteHere<span style="color: #f92672">&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;</span>
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;sup&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"#"</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fn"</span><span style="color: #f92672">&gt;&lt;em</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fas fa-question-circle fa-lg"</span><span style="color: #f92672">&gt;&lt;/em&gt;&lt;span&gt;</span>InsertFootnoteHere<span style="color: #f92672">&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;</span>
 </pre>
         </div>
     </div>
@@ -1058,7 +1112,7 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
         <p>Often it is appropriate to include some caption text underneath an image, chart, video, etc. There is a dedicated HTML5 tag for this call <code>figcaption</code>. TeamSite however does not recognise standardised HTML5 so in lieu of this just add a class by the same name to your paragraph tag.</p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;p</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;figcaption&quot;</span><span style="color: #f92672">&gt;</span>CaptionText<span style="color: #f92672">&lt;/p&gt;</span>
 </pre></div>
     </div>
@@ -1068,7 +1122,7 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
         <p>Simply add the <code>hide</code> class to the opening tag of the element or entire section you wish to hide on the page.</p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;hide&quot;</span><span style="color: #f92672">&gt;</span>ContentToHide<span style="color: #f92672">&lt;/div&gt;</span>
 </pre></div>
     </div>
@@ -1089,10 +1143,10 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
     <h3>Responsive embedded videos</h3>
     <div>
         <p>Sometimes we're asked to add a video to a page and you receive some <strong>embed code</strong> from the client or Production for a Vimeo or YouTube video. If you wrap the provided code in another <code>div</code> and give it the class <strong><code>video-container</code></strong>, it will automatically make the video responsive to the container's width, but with with a maximum width of 768px so it doesn't overwhelm the page on large displays. This could be the entire body section, part of a responsive grid layout, or any sized container.</p>
-        <div class="video-container"></div>
+        <!-- #include virtual="/hr/online/includes/video-example.inc" -->
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"video-container"</span><span style="color: #f92672">&gt;&lt;iframe</span> <span style="color: #a6e22e">width=</span><span style="color: #e6db74">"560"</span> <span style="color: #a6e22e">height=</span><span style="color: #e6db74">"315"</span> <span style="color: #a6e22e">src=</span><span style="color: #e6db74">"https://www.youtube.com/embed/YBK_1WrM294?rel=0"</span> <span style="color: #a6e22e">frameborder=</span><span style="color: #e6db74">"0"</span> <span style="color: #a6e22e">allowfullscreen</span><span style="color: #f92672">&gt;&lt;/iframe&gt;&lt;/div&gt;</span>
 </pre>
         </div>
@@ -1100,7 +1154,7 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
         <p>As an example for any code like this that TeamSite doesn't comprehend, it must be saved externally as in XXX.inc file and linked as such.</p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #960050; background-color: #1e0010">!</span><span style="color: #f92672">--</span><span style="color: #75715e">#include virtual="/pathtofolder/video-example.inc" --&gt;</span>
 </pre>
         </div>
@@ -1109,18 +1163,18 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
     <div>
         <div>
             <ul class="fa-ul policy-metadata">
-                <li><em class="fa-li fa fa-file-pdf-o fa-lg"></em><a href="https://www.health.qld.gov.au/system-governance/policies-standards/doh-policy/policy/qh-pol-225.pdf">Self-flying</a> (PDF, 37KB)</li>
-                <li><em class="fa-li fa fa-calendar fa-lg"></em>Released: October 2014</li>
-                <li><em class="fa-li fa fa-user fa-lg"></em>Owner: Jane Doe</li>
+                <li><em class="fa-li fas fa-file-pdf fa-lg"></em><a href="https://www.health.qld.gov.au/system-governance/policies-standards/doh-policy/policy/qh-pol-225.pdf">Self-flying</a> (PDF, 37KB)</li>
+                <li><em class="fa-li far fa-calendar-alt fa-lg"></em>Released: October 2014</li>
+                <li><em class="fa-li fas fa-user fa-lg"></em>Owner: Jane Doe</li>
             </ul>
         </div>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
         <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; clear: both; border-left: gray 0.8em solid; padding-right: 0.6em;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;ul</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-ul policy-metadata"</span><span style="color: #f92672">&gt;</span>
-          <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-file-pdf-o fa-lg"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"EnterPDFURL"</span><span style="color: #f92672">&gt;</span>Policy title<span style="color: #f92672">&lt;/a&gt; (PDF, xxKB)&lt;/li&gt;</span>
-          <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-calendar fa-lg"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Released: January 2017<span style="color: #f92672">&lt;/li&gt;</span>
-          <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fa fa-user fa-lg"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Owner: Jane Doe<span style="color: #f92672">&lt;/li&gt;</span>
+          <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-file-pdf fa-lg"</span><span style="color: #f92672">&gt;&lt;/i&gt;&lt;a</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">"EnterPDFURL"</span><span style="color: #f92672">&gt;</span>Policy title<span style="color: #f92672">&lt;/a&gt; (PDF, xxKB)&lt;/li&gt;</span>
+          <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li far fa-calendar-alt fa-lg"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Released: January 2017<span style="color: #f92672">&lt;/li&gt;</span>
+          <span style="color: #f92672">&lt;li&gt;&lt;i</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"fa-li fas fa-user fa-lg"</span><span style="color: #f92672">&gt;&lt;/i&gt;</span>Owner: Jane Doe<span style="color: #f92672">&lt;/li&gt;</span>
 <span style="color: #f92672">&lt;/ul&gt;</span>
 </pre>
         </div>
@@ -1131,7 +1185,7 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
         <p>When you really need to draw attention to something for a client during development, why not bring back the ol' Blinking Text? <span class="blink-text">Party like it's 1999!</span></p>
         <h6>Code example:</h6>
         <!-- HTML generated using hilite.me -->
-        <div style="overflow: auto; margin-bottom: 20px; font-size: 14px; border-top: gray 0.1em solid; border-right: gray 0.1em solid; width: auto; background: #272822; border-bottom: gray 0.1em solid; color: #fff; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em;">
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-bottom:20px; font-size:14px; color:#fff;">
             <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;span</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">"blink-text"</span><span style="color: #f92672">&gt;</span>Make this blink<span style="color: #f92672">&lt;/span&gt;</span>
 </pre>
         </div>
@@ -1248,6 +1302,12 @@ BodyContentHere<span style="color: #f92672">&lt;/div&gt;</span>
             <td><span class="btn btn-nav bg-alert-red">#A94442 / rgb(169,68,66)</span></td>
             <td>Alert: Danger</td>
             <td><code>bg-alert-red</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="btn btn-nav bg-light-red text-black">#EEDDDD / rgb(238,221,221)</span></td>
+            <td>Light Red</td>
+            <td><code>bg-light-red</code></td>
             <td></td>
         </tr>
         <tr>

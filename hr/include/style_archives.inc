@@ -64,6 +64,50 @@ div.accordion div>p {
 }
 
 
+
+/*## Vertical Flowcharts */
+
+
+/* This was a neat CSS drawing experiment but didn't display consistently cross-browser. Replaced with use of Font Awesome icons */
+
+.triangle-down {
+    width: 50px;
+    -webkit-transform: rotate(225deg);
+    height: 50px;
+    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, transparent), color-stop(.5, transparent));
+    position: absolute;
+    bottom: -25px;
+    left: 43%;
+}
+
+.triangle-up {
+    width: 50px;
+    -webkit-transform: rotate(45deg);
+    height: 50px;
+    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, transparent), color-stop(.5, transparent));
+    position: absolute;
+    top: -25px;
+    left: 43%;
+}
+
+.blue-grad-1 .triangle-down {
+    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, #ebf5fd), color-stop(.5, transparent));
+}
+
+.blue-grad-2 .triangle-down {
+    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, #d4eafb), color-stop(.5, transparent));
+}
+
+.blue-grad-3 .triangle-down {
+    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, #bddff8), color-stop(.5, transparent));
+}
+
+.blue-grad-4 .triangle-down {
+    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, #a6d4f6), color-stop(.5, transparent));
+}
+
+
+
 /*# Old styles removed as not found to be used anytime from late 2016 */
 
 .hrs_forms input {
@@ -249,6 +293,8 @@ ul.resources {
     font-size: 14px;
     color: #2986a3;
 }
+
+
 
 
 /* END old style */

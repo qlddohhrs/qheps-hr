@@ -455,6 +455,12 @@ blockquote.large {
 
 
 
+
+
+
+
+
+
 /*## Images */
 
 img {
@@ -581,6 +587,7 @@ span.float-right {
 
 
 
+
 /*## Data tables */
 
 table.data {
@@ -592,8 +599,14 @@ table.data {
 table.data th {
     color: #fff;
     background-color: #1375bc;
+    border-right: 1px solid #C0C5BE;
     font-size: 14px;
     padding: 5px;
+}
+
+table.data tr:nth-child(2) th {
+    background: #4D98D1;
+    border-right: 1px solid #C0C5BE;
 }
 
 table.data th,
@@ -989,16 +1002,13 @@ div#accordion {
 /*## Vertical Flowcharts */
 
 .flowchart-vertical {
-    width: 50%;
-    min-width: 300px;
-    max-width: 500px;
     margin: 0;
     padding-bottom: 10px;
 }
 
 .flowchart-box {
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 0;
 }
 
 .flowchart-box>div {
@@ -1011,27 +1021,9 @@ div#accordion {
 }
 
 .triangle-down {
-    width: 50px;
-    -webkit-transform: rotate(225deg);
-    height: 50px;
-    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, transparent), color-stop(.5, transparent));
-    position: absolute;
-    bottom: -25px;
-    left: 43%;
+    margin: -50px 0 -37px;
+    text-align: center;
 }
-
-.triangle-up {
-    width: 50px;
-    -webkit-transform: rotate(45deg);
-    height: 50px;
-    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, transparent), color-stop(.5, transparent));
-    position: absolute;
-    top: -25px;
-    left: 43%;
-}
-
-
-
 
 
 
@@ -1042,8 +1034,8 @@ div#accordion {
     background: #ebf5fd;
 }
 
-.blue-grad-1 .triangle-down {
-    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, #ebf5fd), color-stop(.5, transparent));
+div.blue-grad-1~div.triangle-down {
+    color: #ebf5fd;
 }
 
 .blue-grad-2 {
@@ -1051,8 +1043,8 @@ div#accordion {
     background: #d4eafb;
 }
 
-.blue-grad-2 .triangle-down {
-    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, #d4eafb), color-stop(.5, transparent));
+div.blue-grad-2~div.triangle-down {
+    color: #d4eafb;
 }
 
 .blue-grad-3 {
@@ -1060,8 +1052,8 @@ div#accordion {
     background: #bddff8;
 }
 
-.blue-grad-3 .triangle-down {
-    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, #bddff8), color-stop(.5, transparent));
+div.blue-grad-3~div.triangle-down {
+    color: #bddff8;
 }
 
 .blue-grad-4 {
@@ -1069,12 +1061,9 @@ div#accordion {
     background: #a6d4f6;
 }
 
-.blue-grad-4 .triangle-down {
-    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, #a6d4f6), color-stop(.5, transparent));
+div.blue-grad-4~div.triangle-down {
+    color: #a6d4f6;
 }
-
-
-
 
 
 
@@ -1665,31 +1654,10 @@ span#defaultCountdown.is-countdown {
 
 /*## Font Awesome customisations */
 
-i,
-.fa-ul em {
-    color: #c0c5be;
-}
-
-
-
-
-
-
-/*.fa-ul { margin-left: 0; }*/
-
 .fa-li {
     top: 0;
+    color: #c0c5be;
 }
-
-
-
-
-
-
-/*.fa-li.fa-sm,
-.fa-li.fa-lg {
-    left: -0.3em;
-}*/
 
 .fa-li.fa.fa-circle.fa-sm {
     font-size: 8px;
@@ -1704,19 +1672,6 @@ i,
 .fa-4x.pull-left {
     margin-right: .2em;
 }
-
-
-
-
-
-
-/* Font Awesome 5.0 SVG */
-
-.svg-inline--fa.fa-li {
-    color: #c0c5be;
-}
-
-
 
 
 
@@ -1820,6 +1775,9 @@ a.text-green {
     background-color: #a94442;
 }
 
+.bg-light-red {
+    background-color: #EEDDDD;
+}
 
 
 
@@ -1862,6 +1820,8 @@ a.text-dfv-orange {
 
 
 
+
+
 /*.hidden was a niche usage that doesn't truly hide any element. Can't recall where it was used */
 
 .hidden {
@@ -1885,6 +1845,8 @@ code {
 .figcaption {
     margin-top: 5px;
 }
+
+
 
 
 

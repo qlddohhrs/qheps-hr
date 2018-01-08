@@ -16,7 +16,6 @@ html {
 
 
 
-
 /*# Main content blocks ****************************************/
 
 
@@ -48,7 +47,6 @@ html {
     padding: 0;
     margin: -10px 15px 0 0;
 }
-
 
 
 
@@ -117,7 +115,6 @@ ul#nav {
 #nav li ul li:hover {
     background: #58686b;
 }
-
 
 
 
@@ -217,7 +214,6 @@ div.xcc a:link {
 
 
 
-
 /*### Sliding menu (section navigation) */
 
 
@@ -227,7 +223,6 @@ div.xcc a:link {
     display: none;
     background-image: url(/hr/images/list_icons/icon_expand-green.png);
 }
-
 
 
 
@@ -286,7 +281,6 @@ h3.sidebar {
 
 
 
-
 /*### Quick links (used in Aside and homepage Section nav) */
 
 .quick_links li,
@@ -320,7 +314,6 @@ h3.sidebar {
 
 
 
-
 /*## Footer */
 
 #footer {
@@ -344,7 +337,6 @@ h3.sidebar {
     clear: both;
     background: url(/hr/images/background/bottombgwrap.gif) top repeat-x;
 }
-
 
 
 
@@ -464,6 +456,11 @@ blockquote.large {
 
 
 
+
+
+
+
+
 /*## Images */
 
 img {
@@ -483,14 +480,12 @@ img.magnify:hover {
 
 
 
-
 /*### Page Banners */
 
 .banner-image {
     width: 100%;
     height: auto;
 }
-
 
 
 
@@ -527,7 +522,6 @@ hr {
 
 
 
-
 /*# Custom components ******************************************/
 
 
@@ -554,7 +548,6 @@ span.float-right {
 
 
 
-
 /*## CSS Tables */
 
 .css-table {
@@ -573,7 +566,6 @@ span.float-right {
 .css-table h6 {
     margin-top: 0;
 }
-
 
 
 
@@ -607,8 +599,14 @@ table.data {
 table.data th {
     color: #fff;
     background-color: #1375bc;
+    border-right: 1px solid #C0C5BE;
     font-size: 14px;
     padding: 5px;
+}
+
+table.data tr:nth-child(2) th {
+    background: #4D98D1;
+    border-right: 1px solid #C0C5BE;
 }
 
 table.data th,
@@ -648,7 +646,6 @@ table.data tr.th3 {
 table.data tr.th3 td {
     padding-top: 10px;
 }
-
 
 
 
@@ -739,7 +736,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 
 
 
-
 /*## Boxes */
 
 
@@ -753,7 +749,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
     padding: 5px;
     margin-bottom: 20px;
 }
-
 
 
 
@@ -782,7 +777,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 
 
 
-
 /* Success alert */
 
 .alert-box.success {
@@ -797,7 +791,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 .alert-title.success {
     color: #4f9a52;
 }
-
 
 
 
@@ -824,7 +817,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 
 
 
-
 /* Idea alert */
 
 .alert-box.idea {
@@ -839,7 +831,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 .alert-title.idea {
     color: #08416a;
 }
-
 
 
 
@@ -870,7 +861,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 
 
 
-
 /* Danger alert */
 
 .alert-box.danger {
@@ -885,7 +875,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 .alert-title.danger {
     color: #a94442;
 }
-
 
 
 
@@ -934,7 +923,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 .box-content h6 {
     margin-top: 0;
 }
-
 
 
 
@@ -1011,20 +999,16 @@ div#accordion {
 
 
 
-
 /*## Vertical Flowcharts */
 
 .flowchart-vertical {
-    width: 50%;
-    min-width: 300px;
-    max-width: 500px;
     margin: 0;
     padding-bottom: 10px;
 }
 
 .flowchart-box {
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 0;
 }
 
 .flowchart-box>div {
@@ -1037,28 +1021,9 @@ div#accordion {
 }
 
 .triangle-down {
-    width: 50px;
-    -webkit-transform: rotate(225deg);
-    height: 50px;
-    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, transparent), color-stop(.5, transparent));
-    position: absolute;
-    bottom: -25px;
-    left: 43%;
+    margin: -50px 0 -37px;
+    text-align: center;
 }
-
-.triangle-up {
-    width: 50px;
-    -webkit-transform: rotate(45deg);
-    height: 50px;
-    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, transparent), color-stop(.5, transparent));
-    position: absolute;
-    top: -25px;
-    left: 43%;
-}
-
-
-
-
 
 
 
@@ -1069,8 +1034,8 @@ div#accordion {
     background: #ebf5fd;
 }
 
-.blue-grad-1 .triangle-down {
-    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, #ebf5fd), color-stop(.5, transparent));
+div.blue-grad-1~div.triangle-down {
+    color: #ebf5fd;
 }
 
 .blue-grad-2 {
@@ -1078,8 +1043,8 @@ div#accordion {
     background: #d4eafb;
 }
 
-.blue-grad-2 .triangle-down {
-    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, #d4eafb), color-stop(.5, transparent));
+div.blue-grad-2~div.triangle-down {
+    color: #d4eafb;
 }
 
 .blue-grad-3 {
@@ -1087,8 +1052,8 @@ div#accordion {
     background: #bddff8;
 }
 
-.blue-grad-3 .triangle-down {
-    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, #bddff8), color-stop(.5, transparent));
+div.blue-grad-3~div.triangle-down {
+    color: #bddff8;
 }
 
 .blue-grad-4 {
@@ -1096,13 +1061,9 @@ div#accordion {
     background: #a6d4f6;
 }
 
-.blue-grad-4 .triangle-down {
-    background: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.5, #a6d4f6), color-stop(.5, transparent));
+div.blue-grad-4~div.triangle-down {
+    color: #a6d4f6;
 }
-
-
-
-
 
 
 
@@ -1122,7 +1083,6 @@ div#accordion {
 .policy-metadata a {
     color: #49575a;
 }
-
 
 
 
@@ -1223,7 +1183,6 @@ div#accordion {
 
 
 
-
 /*## Forms */
 
 .hr-form {
@@ -1254,7 +1213,6 @@ input.query {
     -ms-flex: 1;
     flex: 1;
 }
-
 
 
 
@@ -1302,7 +1260,6 @@ input.query {
 
 
 
-
 /*### Checkboxes & Radio buttons */
 
 
@@ -1322,7 +1279,6 @@ input[type=radio]:not(old) {
 
 
 
-
 /* position label */
 
 input[type=checkbox]:not(old)+label,
@@ -1331,7 +1287,6 @@ input[type=radio]:not(old)+label {
     margin-left: -2em;
     line-height: 1.5em;
 }
-
 
 
 
@@ -1367,7 +1322,6 @@ input[type=radio]:not(old)+label>span {
 
 
 
-
 /* Checkbox ticks */
 
 input[type=checkbox]:not(old):checked+label>span:before {
@@ -1387,7 +1341,6 @@ input[type=checkbox]:not(old):checked+label>span:before {
 
 
 
-
 /* Radio button bullets */
 
 input[type=radio]:not(old):checked+label>span>span {
@@ -1400,7 +1353,6 @@ input[type=radio]:not(old):checked+label>span>span {
     background: rgb(19, 117, 188);
     background-image: linear-gradient(rgb(138, 190, 237), rgb(19, 117, 188));
 }
-
 
 
 
@@ -1428,7 +1380,6 @@ input[type=radio]:not(old):checked.fa-check+label>span>i {
 input[type=checkbox]:not(old):checked.fa-check+label>span:before {
     content: '';
 }
-
 
 
 
@@ -1545,7 +1496,6 @@ a.btn-nobg:hover {
 
 
 
-
 /*## Embedded Videos (YouTube/Vimeo) */
 
 .video-container {
@@ -1564,7 +1514,6 @@ a.btn-nobg:hover {
     top: 0;
     left: 0
 }
-
 
 
 
@@ -1630,7 +1579,6 @@ a.btn-nobg:hover {
 
 
 
-
 /*## Footnotes *************************/
 
 sup a.fn {
@@ -1661,7 +1609,6 @@ sup a:hover span {
     padding: 10px;
     margin: 0 0 0 .5em;
 }
-
 
 
 
@@ -1705,36 +1652,12 @@ span#defaultCountdown.is-countdown {
 
 
 
-
 /*## Font Awesome customisations */
-
-i,
-.fa-ul em {
-    color: #c0c5be;
-}
-
-
-
-
-
-
-
-/*.fa-ul { margin-left: 0; }*/
 
 .fa-li {
     top: 0;
+    color: #c0c5be;
 }
-
-
-
-
-
-
-
-/*.fa-li.fa-sm,
-.fa-li.fa-lg {
-    left: -0.3em;
-}*/
 
 .fa-li.fa.fa-circle.fa-sm {
     font-size: 8px;
@@ -1749,21 +1672,6 @@ i,
 .fa-4x.pull-left {
     margin-right: .2em;
 }
-
-
-
-
-
-
-
-/* Font Awesome 5.0 SVG */
-
-.svg-inline--fa.fa-li {
-    color: #c0c5be;
-}
-
-
-
 
 
 
@@ -1867,7 +1775,9 @@ a.text-green {
     background-color: #a94442;
 }
 
-
+.bg-light-red {
+    background-color: #EEDDDD;
+}
 
 
 
@@ -1897,7 +1807,6 @@ a.text-dfv-orange {
 
 
 
-
 /*# Miscellaneous styles ***************************************/
 
 .center {
@@ -1907,6 +1816,7 @@ a.text-dfv-orange {
 .hide {
     display: none;
 }
+
 
 
 
@@ -1935,6 +1845,7 @@ code {
 .figcaption {
     margin-top: 5px;
 }
+
 
 
 
@@ -1984,7 +1895,6 @@ code {
         opacity: 1.0;
     }
 }
-
 
 
 
