@@ -15,9 +15,10 @@
     </tr>
     <tr>
         <td>Please note that any material printed is regarded as an uncontrolled copy. It is the responsibility of the person printing the document to refer frequently to QHEPS for updates.</td>
-        <td align="right">For General HR enquiries contact:
-            <a href="mailto:HRConnect@health.qld.gov.au"> HR Connect</A>
-            <br>Human Resources, Corporate Services Division
+        <td align="right">For General HR enquiries and feedback contact
+            <BR>
+            <A href="mailto:HRConnect@health.qld.gov.au">HR Connect</A>
+            <BR>
         </td>
     </tr>
 </table>

@@ -122,7 +122,7 @@ TeamSite itself has some simplified versioning with the features of:
 * At the top of `#contentblock30` in the QHEPS template, an extra <p> is inserted. Not sure if this can be removed from the new Squiz asset for this but it would be ideal for consistent alignment of all 3 sections.
 
 ### Issues
-* Carousel pagers
+* Carousel pagers - alignment of them is  changing to vertically stacked instead of float left. Haven't troubleshooted beyond this yet. Suspect a change in universal QHEPS class name that's affecting this.
 * Nav2 not collapsing, Accordion expand/collapse caret also not displaying – I believe these 2 issues are related, potentially the top few lines of the custom footer code that was being cut-off.
 	* UPDATE: confirmed this external stylesheet was not loaded: <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 * Font Awesome icons not displaying – confident this was rectified by removing an offending comment line in ‘main_footer-custom.inc’

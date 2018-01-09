@@ -1,5 +1,6 @@
 <!-- Font Awesome icons -->
 <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+<!-- Update this to Font Awesome Pro 5 CDN when available -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/v4-shims.js"></script>
 <!-- JQuery+JQuery UI -->
@@ -35,7 +36,7 @@ $(document).ready(function() {
 });
 </script>
 <!-- javascript for dataTable plug ins: Training calendar and ? -->
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <!-- javascript for datatables -->
 <script type="text/javascript">
 <!--
@@ -329,7 +330,6 @@ $(document).ready(function() {
         $('#factor8').prop('selectedIndex', 0);
     });
 });
-
 // -->
 </script>
 <!-- HR stylesheet -->

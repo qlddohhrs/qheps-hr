@@ -12,10 +12,6 @@ html {
 }
 
 
-
-
-
-
 /*# Main content blocks ****************************************/
 
 
@@ -47,10 +43,6 @@ html {
     padding: 0;
     margin: -10px 15px 0 0;
 }
-
-
-
-
 
 
 /*## Navigation: Secondary */
@@ -115,10 +107,6 @@ ul#nav {
 #nav li ul li:hover {
     background: #58686b;
 }
-
-
-
-
 
 
 /*## Navigation: Section (sidenav) */
@@ -210,10 +198,6 @@ div.xcc a:link {
 }
 
 
-
-
-
-
 /*### Sliding menu (section navigation) */
 
 
@@ -223,10 +207,6 @@ div.xcc a:link {
     display: none;
     background-image: url(/hr/images/list_icons/icon_expand-green.png);
 }
-
-
-
-
 
 
 /*## Navigation: Aside (right-column) */
@@ -277,10 +257,6 @@ h3.sidebar {
 }
 
 
-
-
-
-
 /*### Quick links (used in Aside and homepage Section nav) */
 
 .quick_links li,
@@ -310,10 +286,6 @@ h3.sidebar {
 }
 
 
-
-
-
-
 /*## Footer */
 
 #footer {
@@ -337,10 +309,6 @@ h3.sidebar {
     clear: both;
     background: url(/hr/images/background/bottombgwrap.gif) top repeat-x;
 }
-
-
-
-
 
 
 /*# HTML Elements **********************************************/
@@ -456,11 +424,6 @@ blockquote.large {
 
 
 
-
-
-
-
-
 /*## Images */
 
 img {
@@ -476,20 +439,12 @@ img.magnify:hover {
 }
 
 
-
-
-
-
 /*### Page Banners */
 
 .banner-image {
     width: 100%;
     height: auto;
 }
-
-
-
-
 
 
 /* Use the following for images that must be fixed and not flexible in arrangement. Otherwise use the flexible grid classes */
@@ -518,10 +473,6 @@ hr {
 }
 
 
-
-
-
-
 /*# Custom components ******************************************/
 
 
@@ -544,10 +495,6 @@ span.float-right {
 }
 
 
-
-
-
-
 /*## CSS Tables */
 
 .css-table {
@@ -568,10 +515,6 @@ span.float-right {
 }
 
 
-
-
-
-
 /*## Contact lists */
 
 .contact-info {
@@ -582,10 +525,6 @@ span.float-right {
     margin: 0 0 6px 0;
     padding-left: 6px;
 }
-
-
-
-
 
 
 /*## Data tables */
@@ -648,10 +587,6 @@ table.data tr.th3 td {
 }
 
 
-
-
-
-
 /*## Calendar (Training, etc.) */
 
 .search {
@@ -689,32 +624,26 @@ col.hidden {
     visibility: collapse;
 }
 
-#table1 td {
+#table1 td,
+#table2 td,
+#table3 td,
+#table4 td,
+#table5 td,
+#table6 td,
+#table7 td,
+#table8 td {
     vertical-align: top;
     align: left;
 }
 
-#table1 th {
-    vertical-align: middle;
-    align: left;
-}
-
-#table2 td {
-    vertical-align: top;
-    align: left;
-}
-
-#table2 th {
-    vertical-align: middle;
-    align: left;
-}
-
-#table3 td {
-    vertical-align: top;
-    align: left;
-}
-
-#table3 th {
+#table1 th,
+#table2 th,
+#table3 th,
+#table4 th,
+#table5 th,
+#table6 th,
+#table7 th,
+#table8 th {
     vertical-align: middle;
     align: left;
 }
@@ -735,7 +664,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 
 
 
-
 /*## Boxes */
 
 
@@ -749,10 +677,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
     padding: 5px;
     margin-bottom: 20px;
 }
-
-
-
-
 
 
 /*.alert-box .col:first-child {
@@ -773,10 +697,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 }
 
 
-
-
-
-
 /* Success alert */
 
 .alert-box.success {
@@ -791,10 +711,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 .alert-title.success {
     color: #4f9a52;
 }
-
-
-
-
 
 
 /* Info alert */
@@ -813,10 +729,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 }
 
 
-
-
-
-
 /* Idea alert */
 
 .alert-box.idea {
@@ -831,10 +743,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 .alert-title.idea {
     color: #08416a;
 }
-
-
-
-
 
 
 /* Warning alert */
@@ -857,10 +765,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 }
 
 
-
-
-
-
 /* Danger alert */
 
 .alert-box.danger {
@@ -875,10 +779,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 .alert-title.danger {
     color: #a94442;
 }
-
-
-
-
 
 
 /*### Boxes */
@@ -923,10 +823,6 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 .box-content h6 {
     margin-top: 0;
 }
-
-
-
-
 
 
 /*## Vertical Accordions JQueryUI */
@@ -995,10 +891,6 @@ div#accordion {
 }
 
 
-
-
-
-
 /*## Vertical Flowcharts */
 
 .flowchart-vertical {
@@ -1024,6 +916,10 @@ div#accordion {
     margin: -50px 0 -37px;
     text-align: center;
 }
+
+
+
+
 
 
 
@@ -1067,6 +963,10 @@ div.blue-grad-4~div.triangle-down {
 
 
 
+
+
+
+
 /*## Policies */
 
 .policy-metadata {
@@ -1083,10 +983,6 @@ div.blue-grad-4~div.triangle-down {
 .policy-metadata a {
     color: #49575a;
 }
-
-
-
-
 
 
 /*## Responsive grid */
@@ -1179,10 +1075,6 @@ div.blue-grad-4~div.triangle-down {
 }
 
 
-
-
-
-
 /*## Forms */
 
 .hr-form {
@@ -1213,10 +1105,6 @@ input.query {
     -ms-flex: 1;
     flex: 1;
 }
-
-
-
-
 
 
 /*.hr-form input[type="checkbox"],
@@ -1256,10 +1144,6 @@ input.query {
 }
 
 
-
-
-
-
 /*### Checkboxes & Radio buttons */
 
 
@@ -1275,10 +1159,6 @@ input[type=radio]:not(old) {
 }
 
 
-
-
-
-
 /* position label */
 
 input[type=checkbox]:not(old)+label,
@@ -1287,10 +1167,6 @@ input[type=radio]:not(old)+label {
     margin-left: -2em;
     line-height: 1.5em;
 }
-
-
-
-
 
 
 /* unchecked graphics */
@@ -1318,10 +1194,6 @@ input[type=radio]:not(old)+label>span {
 }
 
 
-
-
-
-
 /* Checkbox ticks */
 
 input[type=checkbox]:not(old):checked+label>span:before {
@@ -1335,10 +1207,6 @@ input[type=checkbox]:not(old):checked+label>span:before {
     text-shadow: 0 0 0.05em rgb(8, 65, 106);
     font-weight: bold;
 }
-
-
-
-
 
 
 /* Radio button bullets */
@@ -1355,10 +1223,6 @@ input[type=radio]:not(old):checked+label>span>span {
 }
 
 
-
-
-
-
 /* Alternative: checkbox/radio replaced with Font Awesome icon */
 
 input[type=checkbox]:not(old).fa-check+label>span,
@@ -1370,20 +1234,17 @@ input[type=radio]:not(old).fa-check+label>span {
     border: none;
     background: none;
     vertical-align: bottom;
+    color: #C0C5BE;
 }
 
-input[type=checkbox]:not(old):checked.fa-check+label>span>i,
-input[type=radio]:not(old):checked.fa-check+label>span>i {
+input[type=checkbox]:not(old):checked.fa-check+label>span,
+input[type=radio]:not(old):checked.fa-check+label>span {
     color: #1375BC;
 }
 
 input[type=checkbox]:not(old):checked.fa-check+label>span:before {
     content: '';
 }
-
-
-
-
 
 
 /*## Buttons */
@@ -1492,10 +1353,6 @@ a.btn-nobg:hover {
 }
 
 
-
-
-
-
 /*## Embedded Videos (YouTube/Vimeo) */
 
 .video-container {
@@ -1514,10 +1371,6 @@ a.btn-nobg:hover {
     top: 0;
     left: 0
 }
-
-
-
-
 
 
 /*## Slideshows */
@@ -1575,10 +1428,6 @@ a.btn-nobg:hover {
 }
 
 
-
-
-
-
 /*## Footnotes *************************/
 
 sup a.fn {
@@ -1613,11 +1462,6 @@ sup a:hover span {
 
 
 
-
-
-
-
-
 /*## Countdown timer */
 
 span#defaultCountdown {
@@ -1647,11 +1491,6 @@ span#defaultCountdown.is-countdown {
 
 
 
-
-
-
-
-
 /*## Font Awesome customisations */
 
 .fa-li {
@@ -1672,9 +1511,6 @@ span#defaultCountdown.is-countdown {
 .fa-4x.pull-left {
     margin-right: .2em;
 }
-
-
-
 
 
 /*# Colours ***************************************/
@@ -1780,9 +1616,6 @@ a.text-green {
 }
 
 
-
-
-
 /*## Campaign colours */
 
 .text-dfv-orange,
@@ -1803,10 +1636,6 @@ a.text-dfv-orange {
 }
 
 
-
-
-
-
 /*# Miscellaneous styles ***************************************/
 
 .center {
@@ -1816,10 +1645,6 @@ a.text-dfv-orange {
 .hide {
     display: none;
 }
-
-
-
-
 
 
 /*.hidden was a niche usage that doesn't truly hide any element. Can't recall where it was used */
@@ -1845,10 +1670,6 @@ code {
 .figcaption {
     margin-top: 5px;
 }
-
-
-
-
 
 
 /*## Just for fun! */
@@ -1895,10 +1716,6 @@ code {
         opacity: 1.0;
     }
 }
-
-
-
-
 
 
 /*# Responsive Media Queries ***********************************/
