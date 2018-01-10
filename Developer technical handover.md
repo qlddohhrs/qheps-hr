@@ -120,11 +120,13 @@ TeamSite itself has some simplified versioning with the features of:
 
 * `#nav2 {margin: 0 15px;}` CHANGE TO `{margin: 15px;}`
 * At the top of `#contentblock30` in the QHEPS template, an extra <p> is inserted. Not sure if this can be removed from the new Squiz asset for this but it would be ideal for consistent alignment of all 3 sections.
+* [BX Slider])https://bxslider.com/install/), the carousel used on the HR homepage has a new version available. It's worth updating this when possible. It may or may not help the related issue below but may fix other bugs.
 
 ### Issues
 * Carousel pagers - alignment of them is  changing to vertically stacked instead of float left. Haven't troubleshooted beyond this yet. Suspect a change in universal QHEPS class name that's affecting this.
 * Nav2 not collapsing, Accordion expand/collapse caret also not displaying – I believe these 2 issues are related, potentially the top few lines of the custom footer code that was being cut-off.
-	* UPDATE: confirmed this external stylesheet was not loaded: <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	* UPDATE: confirmed this external stylesheet was not loaded: <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">. This hopefully resolved the issue.
+	* Additionally, Ben Cardenas logged issues around this with the Online team and cc'ed Johanna. They had made changes to the classes to support all publishers (no word back on this yet).
 * Font Awesome icons not displaying – confident this was rectified by removing an offending comment line in ‘main_footer-custom.inc’
 * Secondary nav display issue (partial green background) – confident this was rectified with instantiation of a custom ‘main_sec.inc’ file that removed all the previous styles from top.
 
@@ -171,4 +173,4 @@ The right-column asides consist of the following parts that should be separately
 
 - - - -
 Prepared by: Jason Shanks
-Last updated: 2018-01-09 14:40
+Last updated: 2018-01-10 19:00
